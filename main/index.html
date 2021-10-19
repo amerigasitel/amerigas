@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#009578">
+        <title>Amerigas</title>
+        <link rel="stylesheet" href="master.css">
+		<link rel="stylesheet" href="top-menu.css">
+    </head>
+    <body>
+		<div id="leftside" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<button class="btn btnLoadText"><b>Load Text</b></button><br />
+			<textarea class="data-txt" padding="top right bottom left"></textarea>
+			
+		
+			<input type="text" id="kbCase" onkeyup="caseSearch()" placeholder="Search for case type.." title="Type in a case type">
+			<ul id="caseList">
+			</ul>
+
+		</div>
+
+			
+		</div>
+		<div id="main" class="main">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			
+			<div id="mainContent">
+				<div class="callflow">
+					<div class="btn-callflow">
+						<button class="btn btn-back"><b>&lt;&lt;</b></button>
+						<input type="text" name="cfno" class="cfno" value="1" />
+						<button class="btn btn-next"><b>&gt;&gt;</b></button>
+						
+					</div>
+					<div class="call-flow cf-1 cf-opening">
+						<span class="header">Opening:</span>
+						<span class="spiel">Thank you for calling AmeriGas, my name is "Jeremias".</span>
+						<span class="spiel">How may I help you, today?</span>
+						<span class="spiel"><b>Paraphrase: ......</b></span>
+					</div>
+					<div class="call-flow cf-2 cf-pulling">
+						<span class="header">Account Pull-up:</span>
+						<span class="spiel">May I have your <b>Account#</b> OR <b>Phone#</b>, please?</span>
+					</div>
+					<div class="call-flow cf-3 cf-verify">
+						<span class="header">Account Verify:</span>
+						<span class="spiel">Would you please verify your <b>Name</b> AND <b>Delivery Address</b> on the account, please?</span>
+					</div>
+					<div class="call-flow cf-4 cf-confirm">
+						<span class="header">Account Confirmation:</span>
+						<span class="spiel">For confirmation purposes, would you please confirm your <b>Mobile #</b> AND your <b>Email Address</b>, please?</span>
+					</div>
+					<div class="cf-power">
+						<hr />
+						<span class="power-words">Power Words: Pefect! | Wonderful! | Great! | Awesome! </span>
+						<textarea name="cf-accphone" class="cf-textarea cf-data cf-accphone" data-name="account"></textarea>
+						<hr />
+					</div>
+					
+					<div class="kb-desc">
+						<textarea class="kb-info" padding="top right bottom left"></textarea>
+					</div>
+				</div>
+
+				<div class="cf-kb">
+				</div>
+
+			</div>
+		</div>
+		<script src="amerigas.js" charset="utf-8"></script>
+		<script src="data.js" charset="utf-8"></script>
+
+    </body>
+</html>
