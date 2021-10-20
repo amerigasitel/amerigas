@@ -113,9 +113,13 @@ $('.btn-next').on("click", function(){
 		$(".cf-"+cf).show();
 	}
 });
+$('.btn-wrap').on("click", function(){
+	$('.wrapup').toggle();
+});
 
 
 $('.btnLoadText').on("click", function(){
+	$('#caseList').html('');
 	var mCDid=''; var mTxt=''; var mTxtCnt = 0; var mTxtLink = '';
 	var iText = $('.data-txt').val().split('\n')
 	for(var i = 0;i < iText.length;i++){

@@ -12,6 +12,7 @@ body {
 .data-txt{width:100%;height:50px;}
 
 .callflow, .cf-kb{float:left;width:100%;}
+.cf-temp{width:47%;padding:1%;}
 .call-flow span{display:block;}
 .call-flow span.header{font-weight:bold;size:1.2em;padding:0 0 5px 0;}
 .cf-textarea{width:100%;height:5em;}
@@ -22,12 +23,13 @@ span.power-words{display:block;font-weight:bold;size:1.2em;}
 .call-flow{display:none;}
 .kb-info{display:none;width:100%;height:280px;}
 .kb-item{display:none;}
+.wrapup{display:none;font-size: 0.8rem;}
 
 #kbCase {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.7rem;
   padding_: 12px 20px 12px 40px;
   padding: 5px;
   border: 1px solid #ddd;
@@ -46,7 +48,7 @@ span.power-words{display:block;font-weight:bold;size:1.2em;}
   background-color: #f6f6f6;
   padding: 5px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: black;
   display: block
 }
