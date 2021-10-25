@@ -1,0 +1,1075 @@
+am - Data
+
+*Start:
+*Issue: Payment
+*Case: Sold To
+*Case Type: 
+*Case Sub-Type:
+*Create a Case: NO
+*Process:
+- CRM
+- Search Account
+- Enter account#, click 'Search' button.
+- Verify NAME and DELIVERY ADDRESS on the account.
+- click 'Magnifying Glass'.
+- 'Application' tab -> 'SAP'
+- Click  the INVOICE TILE in SAP.
+- 'Invoice (1)' tab in the Invoice area.
+- Ask the CUSTOMER for the Invoice that they want to pay.
+- Put a TICK / CHECK the check-box.
+- Click the MAKE PAYMENT button at the top right of the page.
+- In the PAYMENT COCKPIT page.
+     Company Code: OLPR
+	 Cash Journal no: 9002
+	 Business Area: 5738
+- Click the EXECUTE button at the top.
+- Enter the amount in CREDIT CARD input-box.
+- Click the CHECK mark button in the Pop-Up box.
+- Ask the CUSTOMER for CARD TYPE. Example: Visa or Master Card.
+- In the CARD NUMBER -> CRM -> Application -> ECKOH
+- Open the FINESSE then enter the 'Screen2Phone ID:'. example: 47902
+- AGENT: Please enter your credit card followed by the pound(#) sign.
+	** Press #1 in the Finesse, if the customer made a mistake.
+	** Press #885 for MULTIPLE CREDIT CARDS.
+	** 15 seconds, wait time threshold.
+- Once, there is a GREEN CHECK beside the 'Call ID: #47092'
+	** Go back to USD or PAYMENT COCKPIT window.
+- AGENT: The last four digit of your credit card is '2501', IS THIS CORRECT?
+	** Card type: Visa/MC/Amex
+	** Card Number: 49-7bdAA4mv-2501
+	** Valid To: 12/25
+	** Card Holder: Jane Doe
+- AGENT: May I have the EXPIRATION DATE / VALID TO of your credit card, please.
+	** Repeat the 'VALID TO' to the customer.
+- Click the CHECK button
+- AGENT: You are about to pay the AMOUNT of ($628), Would you like me to go ahead and process the PAYMENT?
+	** If YES then click the 'Yes' button.
+	** If NO then click the 'Edit' button. Follow the on-screen process.
+- Copy and Paste the 'Authorization Successful. Auth Code: PPS550' in the notepad,
+- Click the CHECK button.
+- Copy and Paste the 'Transaction Control Number: 16511075' in the notepad
+- AGENT: Would you like RECEIPT sent to your email?
+	** If NO click 'Cancel' button
+	** If YES click the 'Print/Email' button, then VERIFY or ASK FOR EMAIL.
+- Go back to CRM -> Notes & Activities
+- Create Notes
+	** Header: Payment
+	** Body: Customer called in to make a payment of $$$
+	** Paste the 'Auth Code' and 'Transaction Control #'
+- Click 'Add Notes' button.
+- Click the 'Save & Close' tab.
+
+*Img-dir: make_payment
+*Img-file :aguard11.png,aguard12.png,aguard13.png,aguard14.png,aguard15.png,aguard16.png,aguard17.png,aguard18.png,aguard19.png,aguard20.png,aguard21.png,aguard22.png,aguard23.png,aguard24.png,aguard25.png,aguard26.png,aguard27.png,aguard28.png,aguard29.png,aguard30.png,aguard31.png,aguard32.png,aguard33.png,aguard34.png
+
+==============================================
+
+*Start:
+*Issue: Down Payment
+*Case: Sold To
+*Case Type: 
+*Case Sub-Type: 
+*Create a Case: NO
+*Process:
+- CRM -> Search Account
+- Verify NAME and DELIVERY ADDRESS on the account.
+- Search the Account # -> click 'Magnifying Glass'
+- APPLICATION -> SAP -> INVOICE Tile -> 
+- click INVOICE(1) -> TICK invoice# -> click MAKE PAYMENT button
+- In the PAYMENT COCKPIT page.
+     Company Code: OLPR
+	 Cash Journal no: 9002
+	 Business Area: 5738
+- Down Payment Options:
+	Special G/L Ind: Downpayment(A)
+	Document Date: 09/22/2021
+	Posting Date; 09/22/2021
+- click DOWNPAYMENT button -> click 'CHECK' button
+- Enter the amount in CREDIT CARD input-box.
+- Click the CHECK mark button in the Pop-Up box.
+- Ask the CUSTOMER for CARD TYPE. Example: Visa or Master Card.
+- In the CARD NUMBER -> CRM -> Application -> ECKOH
+- Open the FINESSE then enter the 'Screen2Phone ID:'. example: 47902
+- AGENT: Please enter your credit card followed by the pound(#) sign.
+	** Press #1 in the Finesse, if the customer made a mistake.
+	** Press #885 for MULTIPLE CREDIT CARDS.
+	** 15 seconds, wait time threshold.
+- Once, there is a GREEN CHECK beside the 'Call ID: #47092'
+	** Go back to USD or PAYMENT COCKPIT window.
+- AGENT: The last four digit of your credit card is '2501', IS THIS CORRECT?
+	** Card type: Visa/MC/Amex
+	** Card Number: 49-7bdAA4mv-2501
+	** Valid To: 12/25
+	** Card Holder: Jane Doe
+- AGENT: May I have the EXPIRATION DATE / VALID TO of your credit card, please.
+	** Repeat the 'VALID TO' to the customer.
+- Click the CHECK button
+- AGENT: You are about to pay the AMOUNT of ($628), Would you like me to go ahead and process the PAYMENT?
+	** If YES then click the 'Yes' button.
+	** If NO then click the 'Edit' button. Follow the on-screen process.
+- Copy and Paste the 'Authorization Successful. Auth Code: PPS550' in the notepad,
+- Click the CHECK button.
+- Copy and Paste the 'Transaction Control Number: 16511075' in the notepad
+- AGENT: Would you like RECEIPT sent to your email?
+	** If NO click 'Cancel' button
+	** If YES click the 'Print/Email' button, then VERIFY or ASK FOR EMAIL.
+- Go back to CRM -> Notes & Activities
+- Create Notes
+	** Header: Payment
+	** Body: Customer called in to make a down payment of $$$
+	** Paste the 'Auth Code' and 'Transaction Control #'
+10. Click 'Add Notes' button.
+
+*Img-dir: make_payment
+*Img-file :aguard11.png,aguard12.png,aguard13.png,aguard14.png,aguard15.png,aguard16.png,aguard17.png,aguard18.png,aguard19.png,aguard20.png,aguard21.png,aguard22.png,aguard23.png,aguard24.png,aguard25.png,aguard26.png,aguard27.png,aguard28.png,aguard29.png,aguard30.png,aguard31.png,aguard32.png,aguard33.png,aguard34.png
+
+==============================================
+
+*Start:
+*Issue: Reverse or Refund Payment
+*Case: Sold To
+*Case Type: Billing AR 
+*Case Sub-Type: Refund
+*Process:
+http://upfprdw1000.amerigas.com/gm/folder-1.11.37779?mode=EU&originalContext=1.11.45029
+
+- CRM -> Search Account
+- Verify NAME and DELIVERY ADDRESS on the account.
+- Click '+' -> in the Sold To copy the 'Account #'
+- Search the Account # -> click 'Magnifying Glass'
+- Click 'Create New Case' button.
+*Tab: Summary
+*Tab: Case Type = Billing AR
+*Tab: Case Sub-Type = Refund
+*Tab: Called in By and Description
+*Tab: 
+- Click 'Save' button
+- Application -> SAP -> Invoice Tile:
+- Click the Document # for DOUBLE Payment
+- Copy the ASSIGNMENT #
+- Go back the CUSTOMER VIEW -> HOME -> 'Hamburger' icon -> ACCOUNTING -> PAYMENT COCKPIT
+- Click EXECUTE button
+- Enter the Transaction #: 00 + ASSIGNMENT#.
+- AGENT: Would you like me to go ahead and refund the amount of $$$? -> Click YES
+	** Copy the TRANSACTION #.
+	** If CX ask for confirmation, give the CASE#
+- CRM
+*Tab: Notes & Activity
+*Tab: Note =  Double Payment / Refund
+*Tab: Desc =  Customer called in because of double payment in the account. Trasation #= XXXXXX.
+- Save
+*Tab Resolved tab -> Accounts Updated
+*Tab: Save & Close
+
+*Img-dir: refund
+*Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image031.png,image035.png,image039.png,image043.png,image047.png,image051.png,image055.png,image059.png,image063.png,image065.png,image069.png,image073.png,image077.png,image081.png,image085.png,image087.png,image089.png,image091.png,image095.png,image099.png,image103.png,image107.png,image111.png,image115.png,image119.png,image123.png,image125.png,image129.png,image133.png,image137.png,image141.png,image145.png,image149.png,image153.png,image157.png,image161.png,image165.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png,image197.png
+
+==============================================
+
+*Start:
+*Issue: Late Fee
+*Case: Sold To
+*Case Type: Billing AR 
+*Case Sub-Type: Incorrect Bill
+*Resolved Case: Accounts Updated
+*Process:
+
+- CRM | Search Account
+- Sold To | Click "+"
+- Create a Case
+- click "Save" button
+- Application -> SAP -> Invoices
+- click "Invoice" tab, lower part
+- select the "invoice#"
+- Dispute drop-down: Create
+- Reason: late fee(502)
+- Title: FI-LATE FEE-(Lastname, firstname)
+- "Contact Person" tab 
+- Contact Person: CXA name
+- Phone Number: 999-123-5678
+- Long Text: paste "Summary Desc here!"
+- click "Save" bottom right.
+- click "Edit" top right.
+- Orig. Disp. Amt: OR Orig. Disp. Amt: 38.16: 
+- Example Amt is $38.16
+- "Notes" field, top right.
+- click "Request Approval" button
+- copy the "CASE #" for docu.
+- Status: 99 Closed
+- CRM
+
+*Tab: Summary
+*Tab: Case Type = Billing AR
+*Tab: Case Sub-Type = Incorrect Bill
+*Tab: Called in By | Description
+*Tab: 
+*Tab: Billing AR
+*Tab: Incorrect Bill Request=
+*Tab: Billing Document Type= Fee
+*Tab: Dispute Number= 6015757
+*Tab: Dispute Reason= 502
+*Tab: Credit Amount= 38.16
+*Tab: 
+*Tab: Notes & Activity
+*Tab: Note =  Dispute late fee
+*Tab: Desc =  CXA called in to dispute late fee | Dispute Case ID= 601575
+*Tab: 
+*Tab: Resolved tab -> Accounts Updated
+*Tab: 
+*Tab: Save and Close
+
+
+*Img-dir: dispute_late_fee
+*Img-file:image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image033.png,image037.png,image041.png,image047.png,image049.png,image053.png,image057.png,image061.png,image063.png,image065.png,image067.png,image071.png,image075.png,image079.png,image083.png,image085.png,image089.png,image093.png,image097.png,image101.png,image105.png,image108.png,image112.png,image116.png,image120.png,image124.png,image128.png,image130.png,image132.png,image136.png,image140.png,image144.png,image148.png,image152.png,image156.png,image160.png,image164.png,image168.png,image172.png,image176.png,image180.png,image184.png,image188.png,image192.png,image196.png,image200.png,image204.png,image208.png,image212.png,image216.png,image220.png,image224.png
+
+==============================================
+
+*Start:
+*Issue: Payment Plan or Payment Arrangement
+*Case: Sold To
+*Case Type: Billing AR
+*Case Sub-Type: Incorrect Bill
+*Resolved Case: Accounts Updated
+*Process:
+CRM -> Sold to - "+" -> Create a case -> Summary -> Case Type: BillingAR, Case Sub-Type: Payment Arrangement, Desc: Donna want to set up payment arrangement for 4 installment, Customer Details: SAP Payment Terms -> SAP  -> Invoice Tile -> "Invoice" tab -> Put a check mark on the Invoice# check-box -> Drop-down: Payment plan -> click the "Payment Plan" button --> Copy the text in the popup -> click the "payment" button -> enter the OLPR -> Downpayment | Special G-L: A -> Click Downpayment -> Enter the Amount -> Echo -> ** Follow the payment process | copy the transaction code | or get the assignment# -> CRM -> Billing-AR -> Payment Arrangement | Monthly Payment: 4 or # of months, Payment  -> Notes & Activities: Payment Arrangement plan, Customer want to set up a payment arrangement for 4 installments. Copy paste the payment plan # and  Authorization and transaction -> Save -> Resolve Case: Account Updated - Save and Close.
+
+*Tab: Summary
+*Tab: Case Type= Billing AR
+*Tab: Case Sub-Type= Payment Arrangement
+*Tab: Called in By | Description
+*Tab: 
+*Tab: Billing AR
+*Tab: Payment Arrangement=
+*Tab: Monthly Payment= Monthly Payment: 4
+*Tab: Payment=
+*Tab: 
+*Tab: Notes & Activity
+*Tab: Note =  Payment Arrangement
+*Tab: Desc =  CXA want to set up a payment arrangement | payment plan # | transaction #
+*Tab: 
+*Tab: Resolved tab -> Accounts Updated
+*Tab: 
+*Tab: Save and Close
+
+*Img-dir: payment_plan
+*Img-file :image001.png,image007.png,image011.png,image015.png,image019.png,image023.png,image027.png,image031.png,image035.png,image039.png,image043.png,image047.png,image051.png,image055.png,image057.png,image059.png,image063.png,image067.png,image071.png,image075.png,image079.png,image083.png,image087.png,image091.png,image093.png,image097.png,image099.png,image103.png,image107.png,image109.png,image113.png,image117.png,image121.png,image125.png,image129.png,image133.png,image137.png,image141.png,image143.png,image145.png,image147.png,image151.png,image155.png,image159.png,image163.png,image167.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png,image197.png,image201.png,image203.png,image207.png,image211.png,image215.png,image217.png,image221.png,image223.png,image225.png,image229.png,image233.png,image237.png,image241.png,image245.png,image249.png,image251.png,image255.png,image259.png,image265.png,image269.png,image273.png,image277.png,image281.png,image285.png,image289.png,image293.png,image297.png,image301.png,image303.png,image307.png,image311.png,image315.png,image319.png,image323.png,image327.png,image331.png
+
+
+*Start:
+*Issue: Discount
+*Case: Sold To
+*Case Type:  Pricing
+*Case Sub-Type: Discount
+*Add To Queue: Business Services
+*Process:
+Discount(Business Services )
+* Senior Citizen = $0.02/gallon, Military = $0.10/gallon, Farm Bureau = $0.05/gallon
+* Community Codes = Automatic when they setup an account. Located in the "Pricing" Tile. 
+
+** Community Code **
+==============================
+Military 
+Sold To ->  Create ne case -> Case Type: Pricing Sub-type: Discount -> Save -> (Existing CX) -> Application -> Business-> Pricing -> Fill out the "required" fields | ship to account#:  | Account type: Residential | Update Pricing | Add/Remove Pricing Discount | Price Discount: MA - Military Discount -> Submit -> Copy the RITM -> CRM -> Summary -> Flags paste the RITM# -> Pricing -> Discounts -> Discount Type: Military | Year of Service or Birth: 1984 -> Notes & Activities -> Customer wants military discount to be applied, created. -> Add Notes -> Save -> Add To Queue -> Business Services -> Save and Close.
+
+Community Codes
+Sold To ->  Create ne case -> Case Type: Pricing Sub-type: Community codes, Desc: -> Save -> Application -> Existing Customer ->  -> Fill out the "required" fields | ship to account#:  | Account type: Residential | Update Pricing | Add/Remove Pricing Discount | Price Discount: Community Codes -> Submit -> Copy the RITM -> CRM -> Summary -> Flags paste the RITM# -> Pricing -> Community code -> Enter the community code#   -> Add Notes -> Save -> Add To Queue -> Business Services -> Save and Close.
+
+==============================================
+
+*Start:
+*Issue: Convenience Pay
+*Case: Sold To
+*Case Type: Billing AR 
+*Case Sub-Type: Convenience Pay
+*Process:
+Sold To -> Create new Case -> Case Type: Billing A/R, Sub-type: Convenience Pay -> Save -> (Add Convenience pay) -> SAP -> Hamburger -> convenience Pay Agreement -> CP Creation -> Est. Annual Usage: 1000 | Est. Annual Deliveries: 4 -> Tell the customer the GPP -> click the "Calculate" button -> copy the -> Create contract button -> Copy contract#: -> CRM -> Notes & Activities -> Wants budget pay applied, Contract#:  -> Add Notes -> Resolve -> Account Updated -> Save & Close
+
+**Convenient pay and Budget pay is the same.
+** Pricing change every 3 months But the payment arrangement is lock-in contract for 1 year.
+** Customer is unable to pay the bill for 2 payment the contract will be terminated.
+
+= Stay on the same rate
+= 3 months to pay or installment. Price is lock on the payment arrangement.
+= They can order even though they aren't pay with the old installment plan.
+= Customer will give a quote for the entire year of number of Gallon they want.
+= Est. Annual Usage and Est.: 485 |  Annual Deliveries: 2 -> Click "Calculate"
+
+==============================================
+
+*Start:
+*Issue: Incorrect PPG
+*Case: Sold To
+*Case Type: Billing AR 
+*Case Sub-Type: Incorrect Bill
+*Add To Queue: Business Services
+*Process:
+
+
+*Start:
+*Issue: Verify PPG
+*Case: Sold To
+*Case Type: Pricing 
+*Case Sub-Type: Pricing Inquiry / Quote
+*Resolved Case: Accounts Updated
+*Process:
+Sold To -> Case Type: Pricing | Sub-Type: Pricing Inquiry/Quote | Called in by: | Desc: cx is calling about their price per gallon -> Save -> Application -> SAP -> Pricing Tile | check the ppg -> CRM -> Notes & Activities -> "cx is calling about their price per gallon" -> Add Notes -> Resolve case -> Save & Close 
+
+***Market price is based on customer's location.
+
+
+*Start:
+*Issue: Pre-Buy
+*Case: Sold To
+*Case Type: Pricing 
+*Case Sub-Type: GPP
+*Resolved Case: Accounts Updated
+*Process:
+
+
+*Start:
+*Issue: AmeriLock
+*Case: Sold To
+*Case Type: Pricing 
+*Case Sub-Type: GPP
+*Resolved Case: Accounts Updated
+*Process:
+Sold To -> Create new case -> Summary -> Case Type: Pricing, Sub-type: GPP, Called-in:, Desc: -> Save -> Appplication -> SAP -> "Hamburger" icon -> GPP -> AmeriLock-Gpp -> AmeriLock Contract: -> Click "proceed" button -> AmeriLock Contract Main Screen: Price per Gallon: OR if the cx says too high click the "Concession" button to enter the amount in the "Range price" -> click "Copy" button (Still needs to be approved) -> Click "Create contract" -> Yes button -> In the messages, copy Contact# and memo# -> SAP -> Refresh, contract appears but the "Status" still pending for approval for "Business Services" -> Pricing -> Pricing Contract: enter the Contract#, Memo# and Contract type -> Notes & Activities -> Add Notes -> Add to Queue
+
+** If customers asked for copy of contract: SAP -> click the Contract# -> Click the "Header" -> Save -> enter the filename -> CRM -> Create email -> Subject: AmeriLock Contract, Subject -> Attach File -> check the right side -> Click "Send" tab. -> Resolved -> Accounts Updated.
+
+*Img-dir: amerilock
+*Img-file: image001.png,image005.png,image009.png,image015.png,image019.png,image023.png,image027.png,image031.png,image035.png,image039.png,image043.png,image047.png,image051.png
+
+
+
+*Start:
+*Issue: AmeriGuard
+*Case: Sold To
+*Case Type: Pricing 
+*Case Sub-Type: GPP
+*Resolved Case: Accounts Updated
+*Process:
+
+
+*Start:
+*Issue: Order Deliveries
+*Case: Ship To
+*Case Type: Delivery 
+*Case Sub-Type: Delivery Request
+*Add To Queue: Delivery
+*Process:
+Case: Ship To
+Case Type: Delivery
+Case Sub-type: Delivery request
+
+- Acount Search
+- Verify account
+- Click '+' and click 'New Case' in Ship To
+	Case Type: Delivery
+	Case Sub-type: Delivery request
+	Called in By: 
+	Desc: Customer called in to place an order
+- click 'Save' button
+- Application -> SAP - Order tile
+- Click 'Create Order' on the top right
+- Click the 'Order Qty' button
+- Enter the gallon or %
+- Ask the customer for 'Pre-Route Phone#' and special instructions.
+- Click the 'Create Order' button
+- Copy the message from the pop-up, for 'Notes & Activities' tab
+- CRM -> Summary -> Flags:
+	Pending Status: Delivery Service
+- 'Delivery' tab -> Delivery Information:
+	Tank Guage Reading: 5%
+	Number of Full Cylinder:
+- 'Order Informaion' tab
+	Delivery Request Type: New Order
+	Sales Order Number: 686522771
+	Schedule Date:  1 day | 3 days | 7 Days
+	** (FCT = Emergency or Expedited | WLC = ask CXA)
+- 'Notes & Activities' tab
+	Customer called in to place an order off 80 or 50% of gallons
+	Sales Order #: 686522771
+- Click 'Add Notes' button
+- Add To Queue: Delivery
+- Save & Close
+
+
+*Start:
+*Issue: Delivery Suspension
+*Case: Ship To
+*Case Type: Delivery
+*Case Sub-Type: Cancel an Order
+*Add To Queue: Business Services
+*Process:
+Delivery Suspension
+Temporary suspension of future delivery request.
+
+Search Account -> Ship To -> Create New Case -> Case Type: Delivery, Case Sub-Type: Cancel an Order, Called in By: Karsten Meier, Descriptions: Called in to suspend the
+(Cancel Open Ordrer | Suspend future Order) -> (Scheduled After Runout Date = Scheduled ) -> Application -> SAP -> Order -> Click the Order# -> Menu ->  Sales Document -> Change -> "Reason for rejection" tab -> Reason for rejection: Delivery date too late | Safety assurance: Service Cancellation | Shipping Fee: Delivery date too late or Too expensive -> Click "Save"  
+
+Check the SAP if the Orders
+
+Click the "Schedule Prior to Runout Date = Scheduled before the runout date" -> Delivery Cancel Order -> "No" -> "Update Ex -> Application -> Business Services -> Existing Customer -> login using the os4541t73@amerigas.com -> Submit -> "Update  Existing Customer Account Page" -> District(SAP -> Plant: 9230 (Top right) | Is this a Priority: No (purple star icon) | Update Deliveries | Suspend Deliveries | Suspended Deliveries / Remove Suspension: Suspend Deliveries | Suspend Date: ask the customer what date they want -> Click "Submit"
+
+copy the RITM -> Flags -> ServiceNow Ticket Number: RITM324253 -> Delivery tab -> Sales Order status: Canceled -> Notes & Activities tab -> Suspend Future Deliveries | Karsten called in to cancel her deliveries prior to the run out date until 12/27/2021., RIM324253 -> Add note button -> "Add to Queue" tab -> Business Services -> Save and close
+
+** Cancel the suspension will be resume after 24 hours to update our system.
+** RITM always queue to "Business Services"
+
+
+*Start:
+*Issue: Update Driving Direction
+*Case: Ship To
+*Case Type: Account Administration 
+*Case Sub-Type: Site Information
+*Resolved Case: Accounts Updated
+*Process:
+1. Ship To -> "+" -> Summary -> 
+    Case Type: Account Admin | 
+    Sub-Type: Site Information Change | 
+    Called in By: | 
+    Desc:  -> 
+2. Save -> 
+3. SAP
+    - click "Notes" button on the top right
+    - Create "Notes" -> 
+        Notes Class: DDIR = Driving Direction | 
+        Short Text: Driving Direction | 
+        Long Text: Use back door -> 
+    - Save -> 
+4. Go back to CRM -> Summary
+    Notes & Activities -> 
+    Resolved Case -> 
+
+6. Save & Close
+
+
+*Start:
+*Issue: Delivery Method Change FCT to WLC
+*Case: Ship To
+*Case Type: Delivery
+*Case Sub-Type: Delivery Method Change
+*Add To Queue: Business Services
+*Process:
+ Ship To -> "+" -> Create New Case -> Summary -> Case Type: Delivery | Sub-Type: Delivery Method Change | Called in By: Vivian | Desc: Miriam Sutherland want to change here delivery method to forecast and enroll to autopay -> Save -> Application -> Business Services -> Existing Services -> Existing customer -> Login using ost -> Enter the required field -> Update Delivery Details | Change/Update Delivery | Estimated Tank: (Ask the customer or check the SAP -> Submit -> Copy RITM -> X button -> Save -> SAP -> Hamburger Icon -> Create Customer -> Credit check / Auto Pay -> Click the "Auto pay" button -> run Echoh -> To get the Credit Card(Tokenized) and ask the customer for the required fields -> Save -> click OK -> SAP -> Refresh -> CRM -> Summary -> Flags -> paste the RITM -> Notes & Activities -> Delivery method change and autopay enrollment ->
+Add To Queue -> Business Services -> Save & Close
+
+** To check if the customer is Autopay = SAP -> Invoices -> Payment
+
+*Start:
+*Issue: FCT to Autopay
+*Case: Ship To
+*Case Type: Delivery
+*Case Sub-Type: Delivery Method Change
+*Add To Queue: Business Services
+*Process:
+ Ship To -> "+" -> Create New Case -> Summary -> Case Type: Delivery | Sub-Type: Delivery Method Change | Called in By: Vivian | Desc: Miriam Sutherland want to change here delivery method to forecast and enroll to autopay -> Save -> Application -> Business Services -> Existing Services -> Existing customer -> Login using ost -> Enter the required field -> Update Delivery Details | Change/Update Delivery | Estimated Tank: (Ask the customer or check the SAP -> Submit -> Copy RITM -> X button -> Save -> SAP -> Hamburger Icon -> Create Customer -> Credit check / Auto Pay -> Click the "Auto pay" button -> run Echoh -> To get the Credit Card(Tokenized) and ask the customer for the required fields -> Save -> click OK -> SAP -> Refresh -> CRM -> Summary -> Flags -> paste the RITM -> Notes & Activities -> Delivery method change and autopay enrollment ->
+Add To Queue -> Business Services -> Save & Close
+
+** To check if the customer is Autopay = SAP -> Invoices -> Payment
+
+Start:
+*Issue: WLC to FCT
+*Case: Ship To
+*Case Type: Delivery
+*Case Sub-Type: Delivery Method Change
+*Add To Queue: Business Services
+*Process:
+WLC to FCT
+Ship To -> "+" -> Create New Case -> Summary -> Case Type: Delivery | Sub-Type: Delivery Method Change | Called in By: Vivian | Desc: called in to change the method change. -> Save -> Application -> Business Services -> New Existing -> Login using ost -> enter the required field -> Sold To: | Update Deliver Details | Change/Update | change to FCT | Estimated Tank %(Confirm this to the customer) -> Submit -> Copy the RITM -> SAP -> click "Refresh" -> CRM -> Summary -> Flags -> paste the RITM -> Notes & Activities -> Add To Queue -> Business Services -> Save & Close
+
+
+*Start:
+*Issue: Driving Direction
+*Case: Ship To
+*Process:
+** Updating Driving Direction = Special instructions
+Ship To -> "+" -> Summary -> Case Type: Account Administration | Sub-Type: Site Information Change | Called in By: | Desc:  -> Save -> SAP -> "Notes" button on the top right -> Create "Notes" -> Notes Class: DDIR = Driving Direction | Short Text: Driving Direction | Long Text: Use back door -> Save -> CRM -> Notes & Activities -> Resolved Case -> Save & Close
+
+
+
+*Start:
+*Issue: Gas Leak
+*Case: Ship To
+*Process:
+
+- Understand the urgency of your current situation right now. But don't you worry, I got you covered.
+- Because, "In AmeriGas your SAFETY is Our FIRST Priority."
+- To Start of, May I have your Account# OR Phone#, please?
+- Would you please verify your FIRST AND LASTNAME and DELIVERY ADDRESS on the account, please?
+- For confirmation purposes, would you please confirm your Mobile # AND your EMAIL ADDRESS, please?  | No Email: Would you like your to add an email on your account?
+
+
+** In AmeriGas your SAFETY is Our FIRST Priority. **
+
+1. Ship To -> "+" -> Create new case -> 
+2. Summary -> 
+    - Case Type: Service
+    - Sub-Type: Gas Leak
+    - Called in By: 
+    - Desc: cx called in for gas leak.
+
+3. Call Script ->  "Do you smell gas"? Y/N
+
+4. Service tab
+    Gas Leak Information:
+    - Type of Gas Leak: Bulk
+    - Can you see or smell gas? Yes 
+    - How much gas in the  tank: 0 
+    - Tank Guage Reading? %
+    - Customer OOG? Yes / No 
+
+5. SAY ALL the CALL SCRIPT found on the LEFT side and Make sure that you have a CONFIRMATION from the customer.
+    -
+
+6. Service - Gas Leak - Closing Remarks: Read the CALL SCRIPT and say it as "ASAP" only. ->
+
+- I'm now going to contact a field employee. Please go ahead and get everyone out of the building.
+
+-- Documentation: --
+7. Notes & Activities -> 
+    Notes TITLE: Gas Leak
+    Best Call-back #:
+    Customer called in because he/she suspects a gas leak
+
+8. Flags tab
+    Pending Status: Delivery or Service Processing
+
+
+
+9. Add To Queue -> "Emergency" -> 
+
+10. Save & Close
+
+
+*Start:
+*Issue: CO Detector
+*Case: Ship To
+*Process:
+
+- Understand the urgency of your current situation right now. But don't you worry, I got you covered.
+- Because, "In AmeriGas your SAFETY is Our FIRST Priority."
+- To Start of, May I have your Account# OR Phone#, please?
+- Would you please verify your FIRST AND LASTNAME and DELIVERY ADDRESS on the account, please?
+- For confirmation purposes, would you please confirm your Mobile # AND your EMAIL ADDRESS, please?  | No Email: Would you like your to add an email on your account?
+
+** In AmeriGas your SAFETY is Our FIRST Priority. **
+
+1. Ship To -> "+" -> Create new case -> 
+2. Summary -> 
+    - Case Type: Service
+    - Sub-Type: CO Detector
+    - Called in By: (customer name) 
+    - Desc: cx called in because their CO detector went on.
+
+3. ** Left side of the page **
+    - Is the Caller an AmeriGas Customer? Y/N  
+    - Can you  see or smell gas? Y/N
+
+4. Service tab
+    Gas Leak Information:
+    ** Follow call script to auto pop the field
+    - Tank Guage Reading? %
+    - Customer OOG? Yes / No 
+
+5. Service - CO2 AMG Instructions:
+    ** FOLLOW the Call Script at the LEFT side of the page. **
+    ** READ the SAFETY INSTRUCTIONS CAREFULLY. DON'T OMMIT OR ADD!!! **
+    - Click the "I have provided safety instructions" link.
+
+6. Service - CO2 - Closing Remarks
+    - READ THE CALL SCRIPT
+    ** Don't read the "Thank you" but do the wrap-up call instead.
+    
+7 Flags tab
+    Pending Status: Delivery-Service Processing
+
+-- Documentation: --
+8. Notes & Activities -> 
+    Notes TITLE: CO Detector
+    Best Call-back #:
+    CO Detector went on at the Kitchen.  
+
+9. Add To Queue -> "Emergency" -> 
+
+10. Save & Close
+
+
+*Start:
+*Issue: Oil Spill 
+*Case: Ship To
+*Process:
+
+- Understand the urgency of your current situation right now. But don't you worry, I got you covered.
+- Because, "In AmeriGas your SAFETY is Our FIRST Priority."
+- To Start of, May I have your Account# OR Phone#, please?
+- Would you please verify your FIRST AND LASTNAME and DELIVERY ADDRESS on the account, please?
+- For confirmation purposes, would you please confirm your Mobile # AND your EMAIL ADDRESS, please?  | No Email: Would you like your to add an email on your account?
+
+
+** In AmeriGas your SAFETY is Our FIRST Priority. **
+
+1. Ship To -> "+" -> Create new case -> 
+2. Summary tab -> 
+    - Case Type: Service
+    - Sub-Type: Fuel or Oil spill
+    - Called in By: (customer name) 
+    - Desc: cx called in because they see an oil or fuel spill on their backyard.
+
+3. Service - Fuel or Oil Spill Instructions:
+    READ and FOLLOW the call script
+
+4. Service - Fuel or Oil Spill - AMG Handle
+    READ and FOLLOW the call script
+
+5. Service - Fuel or Oil Spill - Closing Remarks
+    Summary tab: (Change the following....)
+    - Case Type: Other or General Support
+    - Case Sub-Type: Customer Site Question
+
+-- Documentation: --
+7. Notes & Activities -> 
+    Notes TITLE: Fuel or Oil Spill
+    Best Call-back #: ASK THE CUSTOMER PHONE#
+    Customer called in because they see an oil or fuel spill on their backyard. 
+
+8. SAVE
+    RESOLVED CASE: "Information provided"
+
+9. SAVE & CLOSE
+
+*Start:
+*Issue: Tank Rent Full
+*Case: Sold To
+*Process:
+http://upfprdw1000.amerigas.com/gm/folder-1.11.37743?mode=EU&originalContext=1.11.45023
+
+Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc:cx would like to dispute the full amount -> Application -> SAP -> Invoice tile -> "invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" dispute Case -> Reason: *SD-Cylinder/ Tank Rent - Reversal |  -> "Credit Memo Amt is for FI only" | click "Request Approval" Button -> Create Rent-CR. Memo Request | Order Reason: Eqpt Rent | All Items -> select the Item and click the "Item Condition" icon at the lower left |if No "ZFER" click "Insert Row" button | click the "double-box" icon -> ZFER | Amount column enter the charge amount -> Click Save -> Bottom page, copy the Credit Memo Request# -> Go back to the "Dispute Management" View -> CRM -> S
+
+*Img-dir: dispute_tank_rent_full
+*Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image033.png,image037.png,image041.png,image047.png,image049.png,image053.png,image057.png,image061.png,image063.png,image065.png,image067.png,image071.png,image075.png,image079.png,image083.png,image087.png,image091.png,image095.png,image099.png,image103.png,image107.png,image111.png,image115.png,image121.png,image125.png,image129.png,image133.png,image137.png,image141.png,image145.png,image149.png,image153.png,image157.png,image161.png,image165.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png,image197.png
+
+
+
+*Start:
+*Issue: Tank Rent Partial
+*Case: Sold To
+*Process:
+http://upfprdw1000.amerigas.com/gm/folder-1.11.44333?mode=EU&originalContext=1.11.45023
+
+Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc:cx would like to dispute the partial amount of tank rent-> Application -> SAP -> Invoice tile -> "invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" dispute Case -> Reason: *SD-Cylinder/ Tank Rent -Amount Dispute - Bill |  -> 
+
+click "Request Approval" Button -> Create Rent-CR. Memo Request | Order Reason: Eqpt Rent | All Items -> select the Item and click the "Item Condition or Coin" icon at the lower left |if No "ZFER" click "Insert Row" button | click the "double-box" icon -> ZFER | Amount column enter the PARTIAL amount (partial amount) -> Click Save -> Bottom page, copy the Credit Memo Request# -> Billing / AR -> Fees & Rent info -> Fees or Rent in Question | click the Incorrect Bill Request -> Billing doc Type | Dispute Reason:SD - Cylinder(512) | Credit Amount: 25.00 
+
+*Img-dir: dispute_tank_rent_partial
+*Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image033.png,image037.png,image041.png,image047.png,image049.png,image053.png,image057.png,image061.png,image063.png,image065.png,image067.png,image071.png,image075.png,image079.png,image083.png,image087.png,image091.png,image095.png,image099.png,image103.png,image107.png,image111.png,image115.png,image117.png,image121.png,image123.png,image125.png,image129.png,image133.png,image137.png,image141.png,image145.png,image149.png,image153.png,image157.png,image161.png,image165.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png
+
+
+
+*Start:
+*Issue: Tank Reset or Level tank
+*Case: Sold To
+*Process:
+Ship To -> Case Type: Service | Case Sub-type: Request Service Appt ->  Summary -> SAP -> SERVICE  tile -> CREATE SERVICE ORDER button -> Notification: LEVEL TANK | Req.Type: NESR Non Emergency Service Request | NE13 Level or Reset Tank | Job Notes: LEVEL TANK -> click  CREATE SERVICE SALES ORDER button -> SAVE button -> Copy the Notification#, Service Order# and Service Sales Order# for Docs -> SERVICE tab -> SERVICE REQUEST INFORMATION -> Is AG CX?: yes -> SSO Information -> Service Work Order Number: 4008119998 | Service Work Order Request Type: NE13 - Level OR Tank(Repair in CALL SCRIPT) | Service Work Order Status: Open -> DELIVER tab -> ORDER INFORMATION -> Sales Order Number: | Priority: Standard | Sales Order Status: Open -> Notes & Activity -> Paste the  Notification#, Service Order# and Service Sales Order# -> Add To Queue: Service -> Save & Close
+
+*Img-dir: tank_reset
+*Img-file :image001.png,image007.png,image011.png,image015.png,image019.png,image023.png,image027.png,image031.png,image035.png,image039.png,image041.png,image045.png,image049.png,image053.png,image057.png,image061.png,image065.png,image068.png,image072.png,image076.png,image080.png,image084.png,image088.png,image092.png,image096.png,image100.png,image104.png,image106.png,image110.png,image114.png,image116.png,image120.png,image122.png,image126.png,image130.png,image134.png,image138.png,image142.png,image146.png,image150.png,image154.png,image158.png,image162.png,image166.png
+
+
+
+*Start:
+*Issue: Rebill
+*Case: Sold To
+*Process:
+Same as Dispute
+
+
+*Img-dir: rebill
+*Img-file :image001.png,image007.png,image011.png,image015.png,image019.png,image023.png,image027.png,image031.png,image035.png,image041.png,image045.png,image049.png,image053.png,image057.png,image061.png,image065.png,image069.png,image073.png,image075.png,image079.png,image083.png,image085.png,image089.png,image093.png,image095.png,image099.png,image103.png,image107.png,image109.png,image111.png,image115.png,image121.png
+
+
+
+*Start:
+*Issue: Dispute
+*Case: 
+*Process:
+Dispute
+Dispute and Rebill - Complaints
+
+Note to Consider: Fair to the Amerigas and/or fair to the customer.
+
+Dispute = is a temporary fix or one time fixed. Real time. 2 dispute/year
+
+Rebill = is a long term fixed. Making changes permanent fixed. No
+
+Type of Dispute or Rebill
+Billing changes, convenience pay, collections, fees & rent, incorrect bill, invoice request, meters, payment arrangements, payment inquiry, refunds
+
+= What do you think are some of the key aspects to evaluate when addressing Billing/AR cases
+
+* Threshold = $100 / customer 
+* Credit card or Credit balance.
+* If bill is NOT paid: Dispute only
+
+
+
+Complaints on the Late fee:
+FI Dispute = financial dispute. Resolve by creation of an FI Credit Memo without any impact to material, quantity, rate or tax.
+= After create or the dispute, you must go to dispute management to maintain the dispute
+
+** No no for "Fees & Rent"
+
+CRM -> Search Account -> Sold To -> "+" -> Create a case -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc: Called in in to dispute late fee. -> Save -> Application -> SAP -> Invoices -> "Invoice" tab -> "Invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" ispute Case -> Reason: late fee(502) -> paste on the title | FI-LATE FEE-Brad Teaser | Long Text: Brad called in to dispute late fee, customer mentioned that he was able to pay the amount before due date -> Save -> Yes -> "Notes" on the top right | Orig. Disp. Amt: 38.16 -> click "Edit" button on the top right -> Credit Memo Amt: 38.16 | Add additional notes if needed -> Request Approval-> copy the popup text  -> click Approved button -> copy the popup (Case: 6015757 successfully changed) | make sure the "Status" is 99 closed on the left column. -> CRM -> Billing/AR -> Incorrect Bill Request: Billing Document Type: Fee | Dispute Number: 6015757 | Dispute Reason: 502 | Credit Amount: 38.16 -> Notes & Activities: Dispute late fee | Brad called in to dispute late fee customer mentioned that he was able to pay the amount before the due date, Dispute Case ID: 601575 -> Save -> Resolve case: Account Update -> Save & Close
+
+====================================
+Fees & rent | Dispute fees and Rent | Dispute Fees and Rent
+
+How to check:
+SAP -> Invoice -> "Invoice" tab -> 
+
+
+Fees & Rent = late fees
+Incorrect QTY = Propane QTY
+
+SD Dispute = Sales Distribution 
+These are solved by creating an SD Credit Memo as they do have high impact to material, quantity, rate, or tax.
+There is a single workflow approval process for both the dispute and credit memo.
+Approval is done via Business workplace, on the individual credit memo which will auto close the dispute
+
+Tank Rent
+=============================
+Partial or Full
+
+Fees & rent | Dispute fees and Rent | 
+
+** Full amount **
+Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc:cx would like to dispute the full amount -> Application -> SAP -> Invoice tile -> "invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" dispute Case -> Reason: *SD-Cylinder/ Tank Rent - Reversal |  -> "Credit Memo Amt is for FI only" | click "Request Approval" Button -> Create Rent-CR. Memo Request | Order Reason: Eqpt Rent | All Items -> select the Item and click the "Item Condition" icon at the lower left |if No "ZFER" click "Insert Row" button | click the "double-box" icon -> ZFER | Amount column enter the charge amount -> Click Save -> Bottom page, copy the Credit Memo Request# -> Go back to the "Dispute Management" View -> CRM -> S
+
+
+** Partial Tank Rent **
+Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc:cx would like to dispute the partial amount of tank rent-> Application -> SAP -> Invoice tile -> "invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" dispute Case -> Reason: *SD-Cylinder/ Tank Rent -Amount Dispute - Bill |  -> 
+
+click "Request Approval" Button -> Create Rent-CR. Memo Request | Order Reason: Eqpt Rent | All Items -> select the Item and click the "Item Condition or Coin" icon at the lower left |if No "ZFER" click "Insert Row" button | click the "double-box" icon -> ZFER | Amount column enter the PARTIAL amount (partial amount) -> Click Save -> Bottom page, copy the Credit Memo Request# ->
+
+Billing / AR -> Fees & Rent info -> Fees or Rent in Question | click the
+Incorrect Bill Request -> Billing doc Type | Dispute Reason:SD - Cylinder(512) | Credit Amount: 25.00 
+
+
+
+Customer wants to take advantage of pre-buy and wants to purchase 785 gallons of propane in 8 deliveries/year.
+Contract calculated with value 2,713.68
+Contract calculated with value 2,588.24
+ZWo1
+Information Message
+Authorization Successful. Auth Code: PPS191
+Transaction Control Number: 17887300 generated.
+Contract Number: 0008789848 is created with value 2,588.24
+
+SAP
+
+
+Credit Memo Request 0686768926 has been saved   
+
+void -> Edit -> Status -> void -> Save
+
+** To check if the customer meets the minimum requirement of gallon per year to wave the AG tank rent. Or If they're using the AG Tank or they own the Tank.
+SAP -> Equipment -> click the "Tank Rent" button
+
+** Minimum requirement is per annual.
+** To check if they already meet the minimum order of propane | MB51
+
+SAP  -> SAP Button -> Enter MB51 click enter -> Material Document List ->  Customer(Ship to Account#) | Posting Date: Enter the date range in one year -> click "Execute"
+
+One time courtesy of half of the price of the tank fee
+
+*Start:
+*Issue: MB51 
+*Case: 
+*Process:
+** Minimum requirement is per annual.
+** To check if they already meet the minimum order of propane | MB51
+
+SAP  -> SAP Button -> Enter MB51 click enter -> Material Document List ->  Customer(Ship to Account#) | Posting Date: Enter the date range in one year -> click "Execute"
+
+*Start:
+*Issue: Cancel Order or Edit Order
+*Case: 
+*Process:
+Cancel Orders
+Edit or Cancel and existing Order
+=================================
+
+**Note: If no Route date we can freely edit and modify order
+**Failed to delivery -> add notes -> add to queue: Escalation/Expedited.
+
+
+104128963
+
+District -> Amergas notes tab or District Service Offerings
+Look for the "Emergency calls"
+
+Edit order
+========================
+Search account -> magnifying glass -> Application -> SAP - Order Tiles -> click the Order# -> "Menu" button -> Sales Document -> Change -> Order text box -> Click the text -> click "check" button -> Order Quantity then enter the new quantity -> "Save" button to save
+
+Add 
+OGSD TeleSales tab -> click the last row -> (Shipping Code:70029) -> Enter the Net
+
+Cancel Orders
+==================
+Search account -> magnifying glass -> Application -> SAP - Order Tiles -> click the Order# -> "Menu" button -> Sales Document -> Change -> "Reason for rejection" tab -> Competitor better -> Save
+
+
+After Edit or Cancel orders
+
+** Back to CRM-> Delivery tab -> make sure to update the "Delivery Information" and " -> Notes & Activities -> Delivery Request Modification -> Customer called in to edit or cancel order. /  Customer requested for an emergency delivery, updated the account and informed the customer about the $300 fee for delivery. Sales order#: 686559022 ->   ->  Save and close
+
+*Start:
+*Issue: Billing Inquiry
+*Case: No Case Needed
+*Process:
+Billing Inquiry
+
+** Account Balance Due = is the balance that you need the customer needs to payment 
+** Open Amt: Next billing cycle
+
+Sold To -> Magnifying -> SAP -> Invoice -> Account balance due -> CRM -> Add notes -> Billing Inquiry | CX called in to check their account balance. -> Save and close
+
+
+*Start:
+*Issue: Will Call Fee - WLC Fee
+*Case: Sold To
+*Process:
+Dispute WLC Fee
+
+
+*Img-dir: dispute_wlc_fee
+*Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image035.png,image039.png,image043.png,image047.png,image051.png,image055.png,image057.png,image061.png,image065.png,image067.png,image071.png,image073.png,image075.png,image077.png,image081.png,image085.png,image089.png,image093.png,image097.png,image101.png,image105.png,image109.png,image113.png,image115.png,image117.png,image119.png,image121.png,image125.png,image129.png,image133.png,image137.png,image141.png,image145.png,image147.png,image149.png,image153.png,image157.png,image161.png,image165.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png,image197.png,image201.png,image205.png,image209.png,image213.png,image217.png,image221.png
+
+
+
+*Start:
+*Issue: Service Order Request
+*Case: Ship To
+*Process:
+http://upfprdw1000.amerigas.com/gm/folder-1.11.39621?mode=EU&primaryCSH=Create%2CService%2COrder
+
+Ship To -> Case Type: Service | Case Sub-type: Request Service Appt ->  Summary -> SAP -> SERVICE  tile -> CREATE SERVICE ORDER button -> Notification: LEVEL TANK | Req.Type: NESR Non Emergency Service Request | NE13 Level or Reset Tank | Job Notes: LEVEL TANK -> click  CREATE SERVICE SALES ORDER button -> SAVE button -> Copy the Notification#, Service Order# and Service Sales Order# for Docs -> SERVICE tab -> SERVICE REQUEST INFORMATION -> Is AG CX?: yes -> SSO Information -> Service Work Order Number: 4008119998 | Service Work Order Request Type: NE13 - Level OR Tank(Repair in CALL SCRIPT) | Service Work Order Status: Open -> DELIVER tab -> ORDER INFORMATION -> Sales Order Number: | Priority: Standard | Sales Order Status: Open -> Notes & Activity -> Paste the  Notification#, Service Order# and Service Sales Order# -> Add To Queue: Service -> Save & Close
+
+*Img-dir: service_order
+*Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image023.png,image027.png,image031.png,image035.png,image039.png,image043.png,image047.png,image051.png,image055.png
+
+
+
+*Start:
+*Issue: District Service Offerings
+*Case: Availability
+*Process:
+** To check the District Service -> Summary -> District Service Offerings or AmeriGas Notes tab -> look if it's offered or available.
+
+- If not (Mr. Customer upon checking here your AmeriGas doesn't offer level service on your location but the good thing is that we are working on it right now, for the meantime we advise that you and HIRE first a service with a third party company on your location. ) 
+
+- Add Notes and Resolved the case
+
+** Google and search for "Zip-code + leveling a propane tank service"
+
+** If route date "Add To Queue" to Pending  SAP. 
+
+** To cancel Service Order -> click the "Ellipses" -> click "" button then follow the on screen instructions.
+
+*Start:
+*Issue: Add new Ship To account
+*Case: Sold To
+*Process:
+Create Additional Ship-to on an Existing Account
+===================================================
+Sold To -> "Customer Account Diagram" icon -> "+" Ship-To -> Fill in all the required fields and Validate Address -> Click the "Validate Address" button -> click the "Create Ship-To" button. -> CRM -> create a case for ship-to | Case Type: Service | Sub-type: Request Service | Called in By: | Desc: -> Notes & Activities -> Add to Queue: Service -> Save & Close.
+
+
+*Start:
+*Issue: Verify Refund
+*Case: Ship or Sold To
+Process:
+** Follow the Images...
+
+
+*Img-dir: verify_refund
+*Img-file :image001.png,image005.png,image009.png,image015.png,image019.png,image023.png,image027.png,image031.png,image037.png,image041.png,image045.png,image049.png,image053.png,image055.png,image059.png,image063.png,image067.png
+
+
+
+*Start:
+*Issue: We don't support
+*Case: 
+*Process:
+1. ACE = Amerigas Cylinder Exchange | transfer to ACE
+2. NMD = National Account | transfer to NMD
+3. TKO = 
+4. TOL = Tank On Location transfer to Sales Dept.
+    Customer who sold their property and move out the property and the tank still on the location
+    ** Tank on Location or Re-location
+    http://upfprdw1000.amerigas.com/gm/folder-1.11.44076?mode=EU&primaryCSH=tol
+
+5. Takeovers must be: Transfer to "Sales" Dept.
+    * Active account
+    * Not final billed or loss coded
+    * Company owned tank
+
+*Start:
+*Issue: No Case Needed
+*Case: 
+*Process:
+Making a Payment and Billing Inquiry
+    - Payment
+    - Down Payment
+    - How much is Due Amount
+    
+*Start:
+*Issue: Add Authorize User
+*Case: Ship To
+*Process:
+
+
+*Img-dir: authorize_user
+*Img-file: image001.png,image007.png,image011.png,image015.png,image019.png,image023.png,image027.png,image031.png,image033.png,image035.png,image037.png,image041.png,image043.png,image045.png,image049.png,image053.png,image057.png,image061.png,image065.png,image069.png,image073.png,image077.png,image081.png,image085.png,image089.png,image093.png,image095.png,image099.png,image103.png,image107.png,image111.png,image113.png,image115.png,image119.png,image123.png,image127.png,image131.png,image135.png
+
+
+
+*Start:
+*Issue: Wrap Up Call 
+*Case: 
+*Process:
+
+Sales Dept.: 844-330-7620
+
+CYLINDER: 888-428-9779
+
+NATIONAL ACCOUNT: 888-528-9475
+
+ACE: 888-428-9779
+
+ACE DEFECTIVE CYLINDER: 888-428-9779 OPTION 2
+
+EMERGENCY LINE: 800-805-0659 OPTION 2
+
+CUSTOMER CARE: 800-427-4968
+
+
+*Start:
+*Issue: Case Type and Sub Type 
+*Case: 
+*Process:
+BILLING/AR
+-billing charges
+-convenience pay
+- dunning/collections
+- fees & rent
+- incorrect bill
+- invoice request
+
+METERS
+-payment arrangement
+-payment inquiry
+-paymnt inquiry
+-refunds
+
+SERVICES
+-call to dig
+-cancel service appt.
+-CO Detector
+-Fuel/oil spill
+-gas leak
+
+MODIFY SERVICE APPT.
+-permitting
+-request service appt.
+-status of service appt.
+
+DELIVERY
+-cancel an order
+-delivery method change ( changing delivery
+type )
+-delivery request (place an order)(status of
+an order)
+-modify an order = change the gallon (
+expedited, standard, emergency )
+-proof of delivery ( not at home, wants to
+confirm the delivery status if there's an
+ongoing delivery today.)
+-transport request
+
+ACCOUNT ADMINISTRATION
+-autopay
+-consumer privacy request
+-contact information
+-online general support
+-preference management
+-site information changePRICING
+-community codes
+-contact
+-discounts
+-GPP
+-pricing inquiry/quote
+
+OTHER GENERAL SUPPORT
+-customer site support
+-district site questions
+-fraud
+-property management
+-special project
+-t&c
+
+DISCONTINUE SERVICE
+-final bill
+-moving
+-retention oppurtunity
+
+COMPLAINT
+-atty. general
+-better business bureau
+-corporate escalation
+-on -site complaint
+-property damage
+
+NEW CUSTOMER
+-Meter
+-new installation
+-swap out
+-takeover
+-tank on location ( TOL )
+
+VENDING
+-no sub-tpeLIHEAP
+-no sub typeNON 
+CUSTOMER CALL
+-no sub type
+
+
+
+*Start:
+*Issue: Wrap Up Call 
+*Case: 
+*Process:
+    Wrap Up - Call
+
+    1. Ask a "Satisfaction Question" | Choose one
+        - Are you satisfied with our interaction today?
+        - Have I effectively answered all your questions today?
+        - Are you satisfied with the service that you received today?
+
+    2. Respond appropriately
+        - I am so sorry that you feel that way. What Else can I help you with you?
+
+    3. Whenever you get the chance, please register your account at amerigas.com where you can do a lot of things such as place an order, pay bills on-line, more information about this call and many more.
+
+    4. Close the call 
+        - Anything else that I can help you with?
+        - (CALLER'S NAME) Thank you for being a VALUED Amerigas customer"
+
+
+*Start:
+*Issue: 
+*Case: 
+*Process:
+
