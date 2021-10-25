@@ -149,6 +149,20 @@ $('.btn-img-show').on("click", function(){
 $('.btn-img-hide').on("click", function(){
 	$('.kb-images').hide();
 });
+$('.btn-calc').on("click", function(){
+	var iText = $('.cf-temp').val().split(' ');
+	var ahtm = 0; var ahts = 0;
+	for(var i = 0;i < iText.length;i++){
+		var aht = iText[i].split('.');
+		//alert();
+		ahtm += parseInt(aht[0]) * 60;
+		ahts += parseInt(aht[1]);
+	}
+	var secs = ahtm + ahts;
+	var mins = (ahtm + ahts) / 60;
+	// + Math.ceil(mins) + ' minutes'
+	alert(ahtm +' + '+ ahts +' = '+ secs + ' seconds');
+});
 
 
 $('.btnLoadText').on("click", function(){
@@ -209,6 +223,7 @@ $('.tab-btns').each(function(e){
 	});
 });
 function loadImages(){
+	$('.kb-docs').html('');
 	$('.kb-images').html('');
 	$('.cfno-img').val(1);
 	var iText = $('.kb-info').val().split('\n');
@@ -233,6 +248,9 @@ function loadImages(){
 				imgCount = imgs.length;
 				$('#img-1').show();
 				//alert(imgDir + "\n\n" + imgs);
+				break;
+			case '*Tab':
+				$('.kb-docs').append("<span>"+ ix[1].trim().replace('=',':') + "</span><br />");
 				break;
 		}
 	}	

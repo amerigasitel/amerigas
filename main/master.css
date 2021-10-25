@@ -26,6 +26,7 @@ span.power-words{display:block;font-weight:bold;size:1.2em;}
 .wrapup{display:none;font-size: 0.8rem;}
 .kb-notes{float:left;min-width:34%;}
 .kbimges{display:none;float:left; width:64%;height:450px;}
+.kb-docs{float:left;}
 
 #kbCase {
   background-position: 10px 12px;
