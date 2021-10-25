@@ -122,7 +122,6 @@ $('.btn-wrap').on("click", function(){
 	$('.wrapup').toggle();
 });
 
-
 $('.bi-next').on("click", function(){
 	var cfCnt = imgCount;
 	var cfno = $('.cfno-img').val();
@@ -210,6 +209,7 @@ $('.tab-btns').each(function(e){
 	});
 });
 function loadImages(){
+	$('.kb-images').html('');
 	$('.cfno-img').val(1);
 	var iText = $('.kb-info').val().split('\n');
 	for(var i = 0;i < iText.length;i++){

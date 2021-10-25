@@ -13,8 +13,6 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<button class="btn btnLoadText"><b>Load Text</b></button><br />
 			<textarea class="data-txt" padding="top right bottom left"></textarea>
-			
-			<textarea name="cf-accphone" class="cf-temp" data-name="account"></textarea>
 			<div class="kb-filter">
 				<input type="text" id="kbCase" onkeyup="caseSearch()" placeholder="Search for case type.." title="Type in a case type">
 				<ul id="caseList">
@@ -77,10 +75,14 @@
 					</div>
 					
 					<div class="kb-desc">
+						<div class="kb-notes">
+							<textarea name="cf-accphone" class="cf-temp" data-name="account"></textarea>
+							<textarea class="kb-info" padding="top right bottom left"></textarea>
+						</div>
 						<div class="kb-img">
 							<div class="kb-images"></div>
 						</div>
-						<textarea class="kb-info" padding="top right bottom left"></textarea>
+						
 					</div>
 					
 				</div>
