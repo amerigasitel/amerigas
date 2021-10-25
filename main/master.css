@@ -12,18 +12,19 @@ body {
 .data-txt{width:100%;height:50px;}
 
 .callflow, .cf-kb{float:left;width:100%;}
-.cf-temp{width:47%;padding:1%;}
+.cf-temp{width:98%;padding:1%;}
 .call-flow span{display:block;}
 .call-flow span.header{font-weight:bold;size:1.2em;padding:0 0 5px 0;}
 .cf-textarea{width:100%;height:5em;}
-.cfno{width:30px;}
+.cfno, .cfno-img{width:30px;}
 
 .call-flow .spiel{font-style:italic;padding:0 0 4px 15px;}
 span.power-words{display:block;font-weight:bold;size:1.2em;}
 .call-flow{display:none;}
 .kb-info{display:none;width:100%;height:280px;}
-.kb-item{display:none;}
+.kb-item, .hdata{display:none;}
 .wrapup{display:none;font-size: 0.8rem;}
+.kbimges{display:none; width:100%;height:450px;}
 
 #kbCase {
   background-position: 10px 12px;
@@ -40,6 +41,8 @@ span.power-words{display:block;font-weight:bold;size:1.2em;}
   list-style-type: none;
   padding: 0;
   margin: 0;
+  height:200px;
+  overflow:auto;
 }
 
 #caseList li a {

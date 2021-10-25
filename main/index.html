@@ -14,26 +14,33 @@
 			<button class="btn btnLoadText"><b>Load Text</b></button><br />
 			<textarea class="data-txt" padding="top right bottom left"></textarea>
 			
-		
-			<input type="text" id="kbCase" onkeyup="caseSearch()" placeholder="Search for case type.." title="Type in a case type">
-			<ul id="caseList">
-			</ul>
+			<textarea name="cf-accphone" class="cf-temp" data-name="account"></textarea>
+			<div class="kb-filter">
+				<input type="text" id="kbCase" onkeyup="caseSearch()" placeholder="Search for case type.." title="Type in a case type">
+				<ul id="caseList">
+				</ul>
+			</div>
+			<div class="div-hr">&nbsp;&nbsp;</div>
 
 		</div>
 
 			
 		</div>
 		<div id="main" class="main">
-			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-			
 			<div id="mainContent">
 				<div class="callflow">
 					<div class="btn-callflow">
+						<span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>&nbsp;&nbsp;
 						<button class="btn btn-back"><b>&lt;&lt;</b></button>
 						<input type="text" name="cfno" class="cfno" value="1" />
 						<button class="btn btn-next"><b>&gt;&gt;</b></button>
 						<button class="btn btn-wrap"><b>Wrap-Up</b></button>
-						
+						<span> | </span>
+						<button class="btn btn-img-show"><b>Show Img</b></button>
+						<button class="btn bi-back" id="bi-back"><b>&lt;&lt;</b></button>
+						<input type="text" name="cfno-img" class="cfno-img" value="1" />
+						<button class="btn bi-next"><b>&gt;&gt;</b></button>
+						<button class="btn btn-img-hide"><b>Hide Img</b></button>
 					</div>
 					<div class="call-flow cf-1 cf-opening">
 						<span class="header">Opening:</span>
@@ -56,8 +63,6 @@
 					<div class="cf-power">
 						<hr />
 						<span class="power-words">Power Words: Pefect! | Wonderful! | Great! | Awesome! </span>
-						<textarea name="cf-accphone" class="cf-temp" data-name="account"></textarea>
-						<textarea name="cf-accphone" class="cf-temp" data-name="account"></textarea>
 						<hr />
 					</div>
 					<div class="wrapup">
@@ -72,12 +77,19 @@
 					</div>
 					
 					<div class="kb-desc">
+						<div class="kb-img">
+							<div class="kb-images"></div>
+						</div>
 						<textarea class="kb-info" padding="top right bottom left"></textarea>
 					</div>
 					
 				</div>
 
 				<div class="cf-kb">
+				</div>
+				
+				<div class="hdata">
+					<span class="imgdir"></span>
 				</div>
 
 			</div>
