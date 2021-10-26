@@ -1,118 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AmeriGas</title>
-	<link rel="stylesheet" href="main.css">
-</head>
-<body>
-	<div class="main">
-		<div id="tab-btn"></div>
-		<div id="tabs" class="tabs">
-		
-		</div>
-		
-		
-		<div class="callflow">
-			<div class="btn-callflow">
-				<button class="btn btn-back"><b>&lt;&lt;</b></button>
-				<input type="text" name="cfno" class="cfno" value="1" />
-				<button class="btn btn-next"><b>&gt;&gt;</b></button>
-				
-			</div>
-			<div class="call-flow cf-1 cf-opening">
-				<span class="header">Opening:</span>
-				<span class="spiel">Thank you for calling AmeriGas, my name is "Jeremias".</span>
-				<span class="spiel">How may I help you, today?</span>
-				<textarea name="cf-discover" class="cf-textarea cf-data cf-discover" data-name="discovery"></textarea>
-				<span class="spiel"><b>Paraphrase: ......</b></span>
-			</div>
-			<div class="call-flow cf-2 cf-pulling">
-				<span class="header">Account Pull-up:</span>
-				<span class="spiel">May I have your <b>Account#</b> OR <b>Phone#</b>, please?</span>
-				<textarea name="cf-accphone" class="cf-textarea cf-data cf-accphone" data-name="account"></textarea>
-			</div>
-			<div class="call-flow cf-3 cf-verify">
-				<span class="header">Account Verify:</span>
-				<span class="spiel">Would you please verify your <b>Name</b> AND <b>Delivery Address</b> on the account, please?</span>
-			</div>
-			<div class="call-flow cf-4 cf-confirm">
-				<span class="header">Account Confirmation:</span>
-				<span class="spiel">For confirmation purposes, would you please confirm your <b>Mobile #</b> AND your <b>Email Address</b>, please?</span>
-			</div>
-			
-			<hr />
-			<div class="datum">
-				<span class="power-words">Power Words: Pefect! | Wonderful! | Great! | Awesome! </span>
-				<br />
-				<button class="btn btnJapi"><b>Load Japi</b></button>
-				<button class="btn btnLoadText"><b>Load Text</b></button><br />
-				<textarea class="data-txt" padding="top right bottom left"></textarea>
-
-				
-				
-				<div id="tabDatum" class="tabDatum">
-					<button class="btn btnDatum1"onclick="datas(this)"><b>Load Data 1</b></button>
-					<button class="btn btnDatum2" onclick="datas(this)"><b>Load Data 2</b></button><br />
-					<textarea id="btnDatum1" class="datInfo" padding="top right bottom left"></textarea>
-					<textarea id="btnDatum2" class="datInfo" padding="top right bottom left"></textarea>
-				</div>
-				
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#009578">
+        <title>Amerigas</title>
+        <link rel="stylesheet" href="master.css">
+		<link rel="stylesheet" href="top-menu.css">
+    </head>
+    <body>
+		<div id="leftside" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<button class="btn btnLoadText"><b>Load Text</b></button><br />
+			<textarea class="data-txt" padding="top right bottom left"></textarea>
+			<div class="kb-filter">
 				<input type="text" id="kbCase" onkeyup="caseSearch()" placeholder="Search for case type.." title="Type in a case type">
 				<ul id="caseList">
 				</ul>
+			</div>
+			<div class="div-hr">&nbsp;&nbsp;</div>
+
+		</div>
+
+			
+		</div>
+		<div id="main" class="main">
+			<div id="mainContent">
+				<div class="callflow">
+					<div class="btn-callflow">
+						<span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>&nbsp;&nbsp;
+						<button class="btn btn-back"><b>&lt;&lt;</b></button>
+						<input type="text" name="cfno" class="cfno" value="1" />
+						<button class="btn btn-next"><b>&gt;&gt;</b></button>
+						<button class="btn btn-wrap"><b>Wrap-Up</b></button>
+						<span> | </span>
+						<button class="btn btn-img-show"><b>Show Img</b></button>
+						<button class="btn bi-back" id="bi-back"><b>&lt;&lt;</b></button>
+						<input type="text" name="cfno-img" class="cfno-img" value="1" />
+						<button class="btn bi-next"><b>&gt;&gt;</b></button>
+						<button class="btn btn-img-hide"><b>Hide Img</b></button>
+						<button class="btn btn-calc"><b>calc</b></button>
+					</div>
+					<div class="call-flow cf-1 cf-opening">
+						<span class="header">Opening:</span>
+						<span class="spiel">Thank you for calling AmeriGas, my name is "Jeremias".</span>
+						<span class="spiel">How may I help you, today?</span>
+						<span class="spiel"><b>Paraphrase: ......</b></span>
+					</div>
+					<div class="call-flow cf-2 cf-pulling">
+						<span class="header">Account Pull-up:</span>
+						<span class="spiel">May I have your <b>Account#</b> OR <b>Phone#</b>, please?</span>
+					</div>
+					<div class="call-flow cf-3 cf-verify">
+						<span class="header">Account Verify:</span>
+						<span class="spiel">Would you please VERIFY your <b>First and Lastname</b> AND the<b>Delivery Address</b> on the account, please?</span>
+					</div>
+					<div class="call-flow cf-4 cf-confirm">
+						<span class="header">Account Confirmation:</span>
+						<span class="spiel">Please CONFIRM your <b>Mobile #</b> AND your <b>Email Address</b>, please?</span>
+					</div>
+					<div class="cf-power">
+						<hr />
+						<span class="power-words">Power Words: Pefect! | Wonderful! | Great! | Awesome! </span>
+						<hr />
+					</div>
+					<div class="wrapup">
+						<p>1. Ask a "Satisfaction Question" | Choose one <br />- Are you satisfied with our interaction today? <br />- Have I effectively answered all your questions today? <br />- Are you satisfied with the service that you received today?</p>
+
+						<p>2. Respond appropriately <br />- I am so sorry that you feel that way. What Else can I help you with you?</p>
+
+						<p>3. Whenever you get the chance, please register your account at amerigas.com where you can do a lot of things such as place an order, pay bills on-line, more information about this call and many more.</p>
+
+						<p>4. Close the call <br />- Anything else that I can help you with? <br />- (CALLER'S NAME) Thank you for being a VALUED Amerigas customer"</p>
+					
+					</div>
+					
+					<div class="kb-desc">
+						<p class='olpr'>Company Code: <b>OLPR</b> | Cash Journal no: <b>9002</b> | Business Area: <b>5738</b></p>
+						<div class="kb-notes">
+							<textarea name="cf-accphone" class="cf-temp" data-name="account"></textarea>
+							<textarea class="kb-info"></textarea>
+						</div>
+						<div class="kb-img">
+							<div class="kb-images"></div>
+						</div>
+					</div>
+					<div class="kb-docs"></div>
+				</div>
+
+				<div class="cf-kb">
+				</div>
+				
+				<div class="hdata">
+					<span class="imgdir"></span>
+				</div>
 
 			</div>
 		</div>
-		
-		<div class="cf-kb">
-		
-			<div class="kb-desc">
-				<textarea class="kb-info" padding="top right bottom left"></textarea>
-			</div>
-		</div>
-	</div>
-	
-	
-	<script src="amerigas.js" charset="utf-8"></script>
-	<script src="data.js" charset="utf-8"></script>
+		<script src="amerigas.js" charset="utf-8"></script>
+		<script src="data.js" charset="utf-8"></script>
 
-<script>
-/*
-Make Payment - Sold To
-Down Payment - Sold To
-Reverse Payment - Sold To
-Orders (Deliveries) - Ship  To
-Orders (Cancel) - Ship To
-Delivery Suspension - Ship To
-AmeriRoute - Ship To
-Document Portal - Ship or Sold To
-
-var sitel = {
-"calls":[
-{
-"driver" : "Make Payment", 
-"caseType": "Sold To", 
-"Pullup" : "1. Click the 'ACCOUNT SEARCH' link at the LEFT side of the page. \n 2. Enter the ACCOUNT# or PHONE# \n 3. Click the 'Magnifying Glass' icon. \n 4. Click APPLICATION tab -> SAP -> INVOICE | A/R Cockpit Page: Go to INVOICE area -> click the 'INVOICE (0)' column -> put a check mark on the INVOICE# that came from the customer.  "
-},
-"driver" : "Down Payment", 
-"caseType": "Sold To", 
-"Pullup" : "1. Click the 'ACCOUNT SEARCH' link at the LEFT side of the page. \n 2. Enter the ACCOUNT# or PHONE# \n 3. Click the 'Magnifying Glass' icon. \n 4. Click APPLICATION tab -> SAP -> INVOICE | A/R Cockpit Page: Go to INVOICE area -> click the 'INVOICE (0)' column -> put a check mark on the INVOICE# that came from the customer. -> click MAKE PAYMENT button at the top right. \n 5. Company Code: OLPR \n 6. Cash Journal: 9002 \n 7. Business Area: 5738 \n 8. click the EXECUTE button  "
-]
-}
-
-				<li><a href="#">Make Payment - Sold To</a></li>
-				<li><a href="#">Down Payment - Sold To</a></li>
-				<li><a href="#">Reverse Payment - Sold To</a></li>
-				<li><a href="#">Orders (Deliveries) - Ship  To</a></li>
-				<li><a href="#">Orders (Cancel) - Ship To</a></li>
-				<li><a href="#">Delivery Suspension - Ship To</a></li>
-				<li><a href="#">AmeriRoute - Ship To</a></li>
-				<li><a href="#">Document Portal - Ship or Sold</a></li>
-
-*/
-</script>
-</body>
+    </body>
 </html>
