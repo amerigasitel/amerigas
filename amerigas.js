@@ -150,8 +150,9 @@ $('.btn-img-hide').on("click", function(){
 	$('.kb-images').hide();
 });
 $('.btn-calc').on("click", function(){
+	var ahtAll = $('.cf-temp').val();
 	var iText = $('.cf-temp').val().split(' ');
-	var ahtm = 0; var ahts = 0;
+	var ahtm = 0; var ahts = 0; var acalls = 0;
 	for(var i = 0;i < iText.length;i++){
 		var aht = iText[i].split('.');
 		//alert();
@@ -160,8 +161,13 @@ $('.btn-calc').on("click", function(){
 	}
 	var secs = ahtm + ahts;
 	var mins = (ahtm + ahts) / 60;
+	acalls = secs / iText.length;
 	// + Math.ceil(mins) + ' minutes'
-	alert(ahtm +' + '+ ahts +' = '+ secs + ' seconds');
+	//var xht = ahtm +' + '+ ahts +' = '+ secs + ' seconds | ' + iText.length;
+	var xht = 'AHT = ' + acalls + ' | Total Calls: ' + iText.length + ' | Totals in Seconds: ' + secs;
+	$('.aht-all').html(ahtAll);
+	$('.aht').html(xht);
+	alert(xht);
 });
 
 
@@ -173,6 +179,7 @@ $('.btnLoadText').on("click", function(){
 		if(iText[i].trim() == '*Start:'){
 			if(i > 0){
 				$('#caseList').append('<li><a href="#" title="'+mCDid+'" onclick="kbShow(this)">'+ mTxtLink +'</a></li>');
+				$('.cf-images').append('<div id="img-'+mCDid+'"></div>');
 				//$('.kb-desc').append('<div id="'+mCDid+'" class="'+mCDid+'">'+mTxt+'</div>');
 				$('.kb-desc').append('<textarea id="'+mCDid+'" class="kb-item '+mCDid+'">'+mTxt+'</textarea>');
 				mTxt = ''; mCDid = ''; mTxtLink = '';
@@ -215,14 +222,14 @@ function kbShow(el){
 	kbId = id;
 	$('.kb-info').val($('.' + id).val());
 	$('.kb-info').show();
-	loadImages();
+	loadImages(id);	
 }
 $('.tab-btns').each(function(e){
 	$(e).on("click", function(){
 		alert(this.nodeName + " | " + this.innerHTML);
 	});
 });
-function loadImages(){
+function loadImages(id){
 	var kbd = '';
 	$('.kb-docs').html('');
 	$('.kb-images').html('');

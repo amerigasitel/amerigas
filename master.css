@@ -14,13 +14,13 @@ body {
 .callflow, .cf-kb{float:left;width:100%;}
 .cf-temp{width:98%;padding:1%;min-height:100px;}
 .call-flow span{display:block;}
-.call-flow span.header{font-weight:bold;size:1.2em;padding:0 0 5px 0;}
+.call-flow span.header{font-weight:bold;font-size: 0.8rem;padding:0 0 5px 0;}
 .cf-textarea{width:100%;height:5em;}
 .cfno, .cfno-img{width:30px;}
 
 .call-flow .spiel{font-style:italic;padding:0 0 4px 15px;}
-span.power-words{display:block;font-weight:bold;size:1.2em;}
-.call-flow{display:none;}
+span.power-words{display:block;font-weight:bold;font-size: 0.8rem;}
+.call-flow{display:none;float:left;width:100%;font-size: 0.8rem;}
 .kb-info{display:none;width:100%;height:280px;}
 .kb-item, .hdata{display:none;}
 .wrapup{display:none;font-size: 0.8rem;}
@@ -28,6 +28,7 @@ span.power-words{display:block;font-weight:bold;size:1.2em;}
 .kbimges{display:none;float:left; width:64%;height:450px;}
 .kb-docs{float:left;font-size: 0.8rem;padding-left:1rem;}
 .olpr{font-size: 0.8rem;}
+.ahts{font-size: 0.8rem;}
 
 #kbCase {
   background-position: 10px 12px;
