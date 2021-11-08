@@ -13,6 +13,10 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<button class="btn btnLoadText"><b>Load Text</b></button><br />
 			<textarea class="data-txt" padding="top right bottom left"></textarea>
+			<div class="kb-notes">
+				<textarea name="cf-accphone" class="cf-temp" data-name="account"></textarea>
+				<textarea class="kb-info"></textarea>
+			</div>
 			<div class="div-hr">&nbsp;&nbsp;</div>
 
 		</div>
@@ -34,6 +38,8 @@
 						<input type="text" name="cfno-img" class="cfno-img" value="1" />
 						<button class="btn bi-next"><b>&gt;&gt;</b></button>
 						<button class="btn btn-img-hide"><b>Hide Img</b></button>
+						<button class="btn btn-iframe"><b>iframe</b></button>
+						<button class="btn btn-kbs" onclick="loadKb()"><b>Load KB</b></button>
 						<button class="btn btn-calc"><b>AHT</b></button>
 					</div>
 					<div class="call-flow cf-1 cf-opening">
@@ -76,21 +82,18 @@
 						<p class='olpr'>Company Code: <b>OLPR</b> | Cash Journal no: <b>9002</b> | Business Area: <b>5738</b>
 						<input type="text" id="kbCase" onkeyup="caseSearch()" placeholder="Search for case type.." title="Type in a case type">
 						</p>
-						<div class="kb-notes">
-							<textarea name="cf-accphone" class="cf-temp" data-name="account"></textarea>
-							<textarea class="kb-info"></textarea>
-						</div>
+						<div id="kbiframe" class="kbiframe"></div>
 						<div class="kb-img">
 							<div class="kb-filter">
 								<ul id="caseList">
 								</ul>
 							</div>
 							<div class="kb-images"></div>
+							
 						</div>
 					</div>
 					<div class="kb-docs"></div>
 				</div>
-
 				<div class="cf-kb">
 				</div>
 				<div class="ahts">
@@ -104,7 +107,7 @@
 				<div class="hdata">
 					<span class="imgdir"></span>
 				</div>
-
+				
 			</div>
 		</div>
 		<script src="amerigas.js" charset="utf-8"></script>

@@ -69,8 +69,8 @@ function $(selector){
 	return self;
 }
 function openNav() {
-  document.getElementById("leftside").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("leftside").style.width = "300px";
+  document.getElementById("main").style.marginLeft = "300px";
 }
 
 function closeNav() {
@@ -106,6 +106,11 @@ function caseSearch() {
 		$('#caseList').show();
     }
 }
+$('.btn-iframe').on("click", function(){
+	//$('#kbiframe').toggle();
+	$('#iframy').toggle();
+	//alert($('#iframy').html());
+});
 $('.btn-back').on("click", function(){
 	var cfno = $('.cfno').val();
 	var cf = (parseInt(cfno)-1);
@@ -277,6 +282,9 @@ function loadImages(id){
 				break;
 			case '*Tab':
 				$('.kb-docs').append("<span>"+ ix[1].trim().replace('=',':') + "</span><br />");
+				break;
+			case '*iframe':
+				$('.kb-docs').html('<iframe src="'+ix[1].trim()+'" class="resizeme" id="iframy"></iframe>');
 				break;
 			default:
 				kbd += iText[i] + '\n';

@@ -88,8 +88,8 @@ am - Data
 *Case: Sold To
 *Case Type: Billing AR 
 *Case Sub-Type: Refund
+*iframe: http://upfprdw1000.amerigas.com/gm/folder-1.11.37779?mode=EU&originalContext=1.11.45029
 *Process:
-http://upfprdw1000.amerigas.com/gm/folder-1.11.37779?mode=EU&originalContext=1.11.45029
 
 - CRM | Search Account
 - Sold To | Click "+"
