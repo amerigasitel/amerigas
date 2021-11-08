@@ -25,7 +25,8 @@ span.power-words{display:block;font-weight:bold;font-size: 0.8rem;}
 .kb-item, .hdata{display:none;}
 .wrapup{display:none;font-size: 0.8rem;}
 .kb-notes{float:left;min-width:34%;}
-.kbimges{display:none;float:left; width:64%;height:450px;}
+.kb-filter{float:left;width:50%;margin-left:1em;}
+.kbimges{display:none;float:left; width:64%;height:450px;margin-left:1%;}
 .kb-docs{float:left;font-size: 0.8rem;padding-left:1rem;}
 .olpr{font-size: 0.8rem;}
 .ahts{font-size: 0.8rem;}
@@ -33,7 +34,7 @@ span.power-words{display:block;font-weight:bold;font-size: 0.8rem;}
 #kbCase {
   background-position: 10px 12px;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 40%;
   font-size: 0.7rem;
   padding_: 12px 20px 12px 40px;
   padding: 5px;

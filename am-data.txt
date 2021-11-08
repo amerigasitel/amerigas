@@ -488,6 +488,20 @@ Discount(Business Services )
 ==============================================
 
 *Start:
+*Issue: Delivery Inquiry
+*Case: Ship To
+*Case Type: Delivery 
+*Case Sub-Type: Delivery Request
+*Resolved Case: Resolved
+*Process:
+Case: Ship To
+Case Type: Delivery
+Case Sub-type: Delivery request
+
+
+==============================================
+
+*Start:
 *Issue: Order Deliveries
 *Case: Ship To
 *Case Type: Delivery 
@@ -823,6 +837,15 @@ Ship To -> Case Type: Service | Case Sub-type: Request Service Appt ->  Summary 
 *Process:
 Same as Dispute
 
+Process the re-bill 
+CRM -> SOLD TO | "+" -> Create a case -> Case Type: Billing A/R | Sub-case type: Incorrect bill, Called in: [customer name], Desc: cx called in to dispute the price per gallon in the customers account. $3.10 was charged of $3.20/gallon -> Save -> Application SAP -> Business Services -> Rebill Request -> Login using your os4541t73 -> Fill out the "Required" fields | Copy pasted the "SHIP TO" account# | "Region" Down-down : Price adjustment -> SAP-> Invoices -> "Invoice" tab -> Look for the invoice# | put a check mark then click the "Ref" column and get the order#(Invoice Ref#) paste to the "Order number for rebill" -> Consolidated : No -> copy paste the Invoice# -> "CONTRACT PRICE: No -> Incorrect Price Billed: 2.639 | Correct price to be charged: 2.50 -> Additional comments: ->  Submit -> copy the RITM -> Flags -> ServiceNow Ticket Number: RITM: 3424348 -> Notes and Activities -> Rebill Request | CX complains the incorrect PPG for the invoice#: . He was quoted for $2.50/gallon but was charged $2.639/gallon. RITM: 3424348 -> Add Notes -> Add To Queue -> Business Services -> Save & Close
+
+** Check if the CX is special pricing
+
+** If already paid: Rebill and dispute
+** Invoices that are seen by the system can be re-bill and dispute.
+
+
 
 *Img-dir: main/rebill
 *Img-file :image001.png,image007.png,image011.png,image015.png,image019.png,image023.png,image027.png,image031.png,image035.png,image041.png,image045.png,image049.png,image053.png,image057.png,image061.png,image065.png,image069.png,image073.png,image075.png,image079.png,image083.png,image085.png,image089.png,image093.png,image095.png,image099.png,image103.png,image107.png,image109.png,image111.png,image115.png,image121.png
@@ -1080,7 +1103,20 @@ Making a Payment and Billing Inquiry
 *Issue: Add Authorize User
 *Case: Sold To
 *Process:
+- No case needed
+- RELATED CONTACTS
+- click the "Ellipsis"
+- New Account Contact
+- In the "Quick Create" enter a new user
+- click "Save and close" button
+- Check the "RELATED CONTACTS" and make sure it was added.
+- Notes & Activity -> Save and close
 
+*Tab: Notes & Activity
+*Tab: Note=  New Authorize User
+*Tab: Desc=  CXA called in to add new authorrize user
+*Tab: 
+*Tab: Save and Close
 
 *Img-dir: main/authorize_user
 *Img-file: image001.png,image007.png,image011.png,image015.png,image019.png,image023.png,image027.png,image031.png,image033.png,image035.png,image037.png,image041.png,image043.png,image045.png,image049.png,image053.png,image057.png,image061.png,image065.png,image069.png,image073.png,image077.png,image081.png,image085.png,image089.png,image093.png,image095.png,image099.png,image103.png,image107.png,image111.png,image113.png,image115.png,image119.png,image123.png,image127.png,image131.png,image135.png
@@ -1105,6 +1141,14 @@ ACE DEFECTIVE CYLINDER: 888-428-9779 OPTION 2
 EMERGENCY LINE: 800-805-0659 OPTION 2
 
 CUSTOMER CARE: 800-427-4968
+
+Service: 70015
+ACE Commercial: 888-428-9779
+Orchard Commercial: 208-186-1020
+
+
+
+IT as per work force 8777671611 
 
 ==============================================
 

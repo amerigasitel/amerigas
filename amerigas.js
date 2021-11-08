@@ -83,6 +83,12 @@ aGas['imgdir'] = [];
 aGas['imgfile'] = [];
 var kbId = '';
 var imgCount = 0;
+
+const fileUrl = 'am-data.txt' // provide file location
+fetch(fileUrl)
+   .then( r => r.text() )
+   .then( t => $('.data-txt').html(t) )
+
 function caseSearch() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("kbCase");
@@ -97,6 +103,7 @@ function caseSearch() {
         } else {
             li[i].style.display = "none";
         }
+		$('#caseList').show();
     }
 }
 $('.btn-back').on("click", function(){
@@ -152,12 +159,16 @@ $('.btn-img-hide').on("click", function(){
 $('.btn-calc').on("click", function(){
 	var ahtAll = $('.cf-temp').val();
 	var iText = $('.cf-temp').val().split(' ');
-	var ahtm = 0; var ahts = 0; var acalls = 0;
+	var ahtm = 0; var ahts = 0; var ahtInSec=''; 
+	var acalls = 0; var ahtAlls = '';
 	for(var i = 0;i < iText.length;i++){
 		var aht = iText[i].split('.');
 		//alert();
 		ahtm += parseInt(aht[0]) * 60;
 		ahts += parseInt(aht[1]);
+		var ahtMin = parseInt(aht[0]) * 60;
+		ahtInSec += (ahtMin + parseInt(aht[1])) + " ";
+		ahtAlls += iText[i].replace('.', ':') + ' ';
 	}
 	var secs = ahtm + ahts;
 	var mins = (ahtm + ahts) / 60;
@@ -165,13 +176,42 @@ $('.btn-calc').on("click", function(){
 	// + Math.ceil(mins) + ' minutes'
 	//var xht = ahtm +' + '+ ahts +' = '+ secs + ' seconds | ' + iText.length;
 	var xht = 'AHT = ' + acalls + ' | Total Calls: ' + iText.length + ' | Totals in Seconds: ' + secs;
-	$('.aht-all').html(ahtAll);
+	$('.aht-alls').html('Calls: ' + ahtAll);
+	$('.aht-sec').html('Call/Seconds: ' + ahtInSec);
+	$('.aht-all').html('Call/Minute: ' + ahtAlls);
 	$('.aht').html(xht);
 	alert(xht);
 });
 
 
 $('.btnLoadText').on("click", function(){
+	loadKb();
+});
+
+function spaceToDash(str){
+	if(typeof(str) != null || typeof(str) != 'undefined'){
+		var iB = str.split(' ');
+		var std = str;
+		for(var a = 0; a < iB.length; a++){
+			std = std.replace(' ', '_');
+		}
+		return std;
+	}
+}
+function kbShow(el){
+	var id = el.getAttribute('title');
+	kbId = id;
+	$('.kb-info').val($('.' + id).val());
+	$('.kb-info').show();
+	loadImages(id);	
+	$('#caseList').hide();
+}
+$('.tab-btns').each(function(e){
+	$(e).on("click", function(){
+		alert(this.nodeName + " | " + this.innerHTML);
+	});
+});
+function loadKb(){
 	$('#caseList').html('');
 	var mCDid=''; var mTxt=''; var mTxtCnt = 0; var mTxtLink = '';
 	var iText = $('.data-txt').val().split('\n');
@@ -205,30 +245,8 @@ $('.btnLoadText').on("click", function(){
 			
 		}
 	}
-});
-
-function spaceToDash(str){
-	if(typeof(str) != null || typeof(str) != 'undefined'){
-		var iB = str.split(' ');
-		var std = str;
-		for(var a = 0; a < iB.length; a++){
-			std = std.replace(' ', '_');
-		}
-		return std;
-	}
+	$('.data-txt').val('');
 }
-function kbShow(el){
-	var id = el.getAttribute('title');
-	kbId = id;
-	$('.kb-info').val($('.' + id).val());
-	$('.kb-info').show();
-	loadImages(id);	
-}
-$('.tab-btns').each(function(e){
-	$(e).on("click", function(){
-		alert(this.nodeName + " | " + this.innerHTML);
-	});
-});
 function loadImages(id){
 	var kbd = '';
 	$('.kb-docs').html('');

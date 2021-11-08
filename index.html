@@ -13,11 +13,6 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<button class="btn btnLoadText"><b>Load Text</b></button><br />
 			<textarea class="data-txt" padding="top right bottom left"></textarea>
-			<div class="kb-filter">
-				<input type="text" id="kbCase" onkeyup="caseSearch()" placeholder="Search for case type.." title="Type in a case type">
-				<ul id="caseList">
-				</ul>
-			</div>
 			<div class="div-hr">&nbsp;&nbsp;</div>
 
 		</div>
@@ -39,7 +34,7 @@
 						<input type="text" name="cfno-img" class="cfno-img" value="1" />
 						<button class="btn bi-next"><b>&gt;&gt;</b></button>
 						<button class="btn btn-img-hide"><b>Hide Img</b></button>
-						<button class="btn btn-calc"><b>calc</b></button>
+						<button class="btn btn-calc"><b>AHT</b></button>
 					</div>
 					<div class="call-flow cf-1 cf-opening">
 						<span class="header">Opening:</span>
@@ -78,12 +73,18 @@
 					</div>
 					
 					<div class="kb-desc">
-						<p class='olpr'>Company Code: <b>OLPR</b> | Cash Journal no: <b>9002</b> | Business Area: <b>5738</b></p>
+						<p class='olpr'>Company Code: <b>OLPR</b> | Cash Journal no: <b>9002</b> | Business Area: <b>5738</b>
+						<input type="text" id="kbCase" onkeyup="caseSearch()" placeholder="Search for case type.." title="Type in a case type">
+						</p>
 						<div class="kb-notes">
 							<textarea name="cf-accphone" class="cf-temp" data-name="account"></textarea>
 							<textarea class="kb-info"></textarea>
 						</div>
 						<div class="kb-img">
+							<div class="kb-filter">
+								<ul id="caseList">
+								</ul>
+							</div>
 							<div class="kb-images"></div>
 						</div>
 					</div>
@@ -93,8 +94,11 @@
 				<div class="cf-kb">
 				</div>
 				<div class="ahts">
-					<p class="aht"></p>
-					<p class="aht-all"></p>
+					<span class="aht"></span><br />
+					<span class="aht-sec"></span><br />
+					<span class="aht-mins"></span>
+					<span class="aht-all"></span><br />
+					<span class="aht-alls"></span>
 				</div>
 				<div class="cf-images"></div>
 				<div class="hdata">
