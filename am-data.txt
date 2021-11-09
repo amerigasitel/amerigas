@@ -88,8 +88,9 @@ am - Data
 *Case: Sold To
 *Case Type: Billing AR 
 *Case Sub-Type: Refund
-*iframe: http://upfprdw1000.amerigas.com/gm/folder-1.11.37779?mode=EU&originalContext=1.11.45029
+*iframes: http://upfprdw1000.amerigas.com/gm/folder-1.11.37779?mode=EU&originalContext=1.11.45029
 *Process:
+
 
 - CRM | Search Account
 - Sold To | Click "+"
@@ -795,8 +796,8 @@ Ship To -> "+" -> Create New Case -> Summary -> Case Type: Delivery | Sub-Type: 
 *Start:
 *Issue: Tank Rent Full
 *Case: Sold To
+*iframes: http://upfprdw1000.amerigas.com/gm/folder-1.11.37743?mode=EU&originalContext=1.11.45023
 *Process:
-http://upfprdw1000.amerigas.com/gm/folder-1.11.37743?mode=EU&originalContext=1.11.45023
 
 Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc:cx would like to dispute the full amount -> Application -> SAP -> Invoice tile -> "invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" dispute Case -> Reason: *SD-Cylinder/ Tank Rent - Reversal |  -> "Credit Memo Amt is for FI only" | click "Request Approval" Button -> Create Rent-CR. Memo Request | Order Reason: Eqpt Rent | All Items -> select the Item and click the "Item Condition" icon at the lower left |if No "ZFER" click "Insert Row" button | click the "double-box" icon -> ZFER | Amount column enter the charge amount -> Click Save -> Bottom page, copy the Credit Memo Request# -> Go back to the "Dispute Management" View -> CRM -> S
 
@@ -808,8 +809,9 @@ Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Bil
 *Start:
 *Issue: Tank Rent Partial
 *Case: Sold To
+*iframes:http://upfprdw1000.amerigas.com/gm/folder-1.11.44333?mode=EU&originalContext=1.11.45023
 *Process:
-http://upfprdw1000.amerigas.com/gm/folder-1.11.44333?mode=EU&originalContext=1.11.45023
+
 
 Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc:cx would like to dispute the partial amount of tank rent-> Application -> SAP -> Invoice tile -> "invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" dispute Case -> Reason: *SD-Cylinder/ Tank Rent -Amount Dispute - Bill |  -> 
 
@@ -1021,8 +1023,8 @@ Dispute WLC Fee
 *Start:
 *Issue: Service Order Request
 *Case: Ship To
+*iframes:http://upfprdw1000.amerigas.com/gm/folder-1.11.39621?mode=EU&primaryCSH=Create%2CService%2COrder
 *Process:
-http://upfprdw1000.amerigas.com/gm/folder-1.11.39621?mode=EU&primaryCSH=Create%2CService%2COrder
 
 Ship To -> Case Type: Service | Case Sub-type: Request Service Appt ->  Summary -> SAP -> SERVICE  tile -> CREATE SERVICE ORDER button -> Notification: LEVEL TANK | Req.Type: NESR Non Emergency Service Request | NE13 Level or Reset Tank | Job Notes: LEVEL TANK -> click  CREATE SERVICE SALES ORDER button -> SAVE button -> Copy the Notification#, Service Order# and Service Sales Order# for Docs -> SERVICE tab -> SERVICE REQUEST INFORMATION -> Is AG CX?: yes -> SSO Information -> Service Work Order Number: 4008119998 | Service Work Order Request Type: NE13 - Level OR Tank(Repair in CALL SCRIPT) | Service Work Order Status: Open -> DELIVER tab -> ORDER INFORMATION -> Sales Order Number: | Priority: Standard | Sales Order Status: Open -> Notes & Activity -> Paste the  Notification#, Service Order# and Service Sales Order# -> Add To Queue: Service -> Save & Close
 
@@ -1072,6 +1074,7 @@ Process:
 *Start:
 *Issue: We don't support
 *Case: 
+iframes:http://upfprdw1000.amerigas.com/gm/folder-1.11.44076?mode=EU&primaryCSH=tol
 *Process:
 1. ACE = Amerigas Cylinder Exchange | transfer to ACE
 2. NMD = National Account | transfer to NMD
@@ -1079,8 +1082,7 @@ Process:
 4. TOL = Tank On Location transfer to Sales Dept.
     Customer who sold their property and move out the property and the tank still on the location
     ** Tank on Location or Re-location
-    http://upfprdw1000.amerigas.com/gm/folder-1.11.44076?mode=EU&primaryCSH=tol
-
+    
 5. Takeovers must be: Transfer to "Sales" Dept.
     * Active account
     * Not final billed or loss coded
