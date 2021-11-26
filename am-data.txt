@@ -182,7 +182,6 @@ am - Data
 *Img-file:image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image033.png,image037.png,image041.png,image047.png,image049.png,image053.png,image057.png,image061.png,image063.png,image065.png,image067.png,image071.png,image075.png,image079.png,image083.png,image085.png,image089.png,image093.png,image097.png,image101.png,image105.png,image108.png,image112.png,image116.png,image120.png,image124.png,image128.png,image130.png,image132.png,image136.png,image140.png,image144.png,image148.png,image152.png,image156.png,image160.png,image164.png,image168.png,image172.png,image176.png,image180.png,image184.png,image188.png,image192.png,image196.png,image200.png,image204.png,image208.png,image212.png,image216.png,image220.png,image224.png
 
 ==============================================
-
 *Start:
 *Issue: Payment Plan or Payment Arrangement
 *Case: Sold To
@@ -361,7 +360,6 @@ Discount(Business Services )
 *Process:
 
 ==============================================
-
 *Start:
 *Issue: Verify PPG
 *Case: Sold To
@@ -545,6 +543,9 @@ Case Sub-type: Delivery request
 - Add To Queue: Delivery
 - Save & Close
 
+*Img-dir: main/delivery_request
+*Img-file:image01.png,image02.png,image03.png,image04.png,image05.png,image06.png,image07.png,image08.png,image09.png,image10.png,image11.png,image12.png,image13.png,image14.png,image15.png,image16.png,image17.png,image18.png,image19.png,image20.png,image21.png,image22.png,image23.png,image24.png,image25.png,image26.png,image27.png,image28.png,image29.png,image30.png,image31.png,image32.png,image33.png,image34.png,image35.png,image36.png,image37.png,image38.png,image39.png,image40.png
+
 ==============================================
 
 *Start:
@@ -570,7 +571,6 @@ copy the RITM -> Flags -> ServiceNow Ticket Number: RITM324253 -> Delivery tab -
 ** RITM always queue to "Business Services"
 
 ==============================================
-
 *Start:
 *Issue: Update Driving Direction
 *Case: Ship To
@@ -598,7 +598,7 @@ copy the RITM -> Flags -> ServiceNow Ticket Number: RITM324253 -> Delivery tab -
 6. Save & Close
 
 ==============================================
-
+==============================================
 *Start:
 *Issue: Delivery Method Change FCT to WLC
 *Case: Ship To
@@ -606,13 +606,49 @@ copy the RITM -> Flags -> ServiceNow Ticket Number: RITM324253 -> Delivery tab -
 *Case Sub-Type: Delivery Method Change
 *Add To Queue: Business Services
 *Process:
- Ship To -> "+" -> Create New Case -> Summary -> Case Type: Delivery | Sub-Type: Delivery Method Change | Called in By: Vivian | Desc: Miriam Sutherland want to change here delivery method to forecast and enroll to autopay -> Save -> Application -> Business Services -> Existing Services -> Existing customer -> Login using ost -> Enter the required field -> Update Delivery Details | Change/Update Delivery | Estimated Tank: (Ask the customer or check the SAP -> Submit -> Copy RITM -> X button -> Save -> SAP -> Hamburger Icon -> Create Customer -> Credit check / Auto Pay -> Click the "Auto pay" button -> run Echoh -> To get the Credit Card(Tokenized) and ask the customer for the required fields -> Save -> click OK -> SAP -> Refresh -> CRM -> Summary -> Flags -> paste the RITM -> Notes & Activities -> Delivery method change and autopay enrollment ->
-Add To Queue -> Business Services -> Save & Close
+ Ship To -> 
+ "+" -> Create New Case 
+ ->  Summary 
+ -> Case Type: Delivery 
+    Sub-Type: Delivery Method Change |
+    Called in By: Vivian | 
+	Desc: Miriam Sutherland want to change here delivery method to forecast and enroll to autopay 
+ -> Save 
+ -> Application 
+ -> Business Services 
+ -> Existing Services 
+ -> Existing customer 
+ -> Login using ost 
+ -> Enter the required field 
+ -> Update Delivery Details | Change/Update Delivery | Estimated Tank: (Ask the customer or check the SAP 
+ -> Submit 
+ -> Copy RITM 
+ -> X button 
+ -> Save 
+ -> SAP 
+ -> Hamburger Icon 
+ -> Create Customer 
+ -> Credit check / Auto Pay 
+ -> Click the "Auto pay" button 
+ -> run Echoh 
+ -> To get the Credit Card(Tokenized) and ask the customer for the required fields 
+ -> Save 
+ -> click OK 
+ -> SAP 
+ -> Refresh 
+ -> CRM 
+ -> Summary 
+ -> Flags 
+ -> paste the RITM 
+ -> Notes & Activities 
+ -> Delivery method change and autopay enrollment 
+ -> Add To Queue 
+ -> Business Services 
+ -> Save & Close
 
 ** To check if the customer is Autopay = SAP -> Invoices -> Payment
 
 ==============================================
-
 *Start:
 *Issue: FCT to Autopay
 *Case: Ship To
@@ -620,13 +656,51 @@ Add To Queue -> Business Services -> Save & Close
 *Case Sub-Type: Delivery Method Change
 *Add To Queue: Business Services
 *Process:
- Ship To -> "+" -> Create New Case -> Summary -> Case Type: Delivery | Sub-Type: Delivery Method Change | Called in By: Vivian | Desc: Miriam Sutherland want to change here delivery method to forecast and enroll to autopay -> Save -> Application -> Business Services -> Existing Services -> Existing customer -> Login using ost -> Enter the required field -> Update Delivery Details | Change/Update Delivery | Estimated Tank: (Ask the customer or check the SAP -> Submit -> Copy RITM -> X button -> Save -> SAP -> Hamburger Icon -> Create Customer -> Credit check / Auto Pay -> Click the "Auto pay" button -> run Echoh -> To get the Credit Card(Tokenized) and ask the customer for the required fields -> Save -> click OK -> SAP -> Refresh -> CRM -> Summary -> Flags -> paste the RITM -> Notes & Activities -> Delivery method change and autopay enrollment ->
-Add To Queue -> Business Services -> Save & Close
+ Ship To 
+ -> "+" -> Create New Case 
+ -> Summary 
+ -> Case Type: Delivery | 
+ Sub-Type: Delivery Method Change | 
+ Called in By: Vivian | 
+ Desc: Miriam Sutherland want to change here delivery method to forecast and enroll to autopay 
+ -> Save 
+ -> Application 
+ -> Business Services 
+ -> Existing Services 
+ -> Existing customer 
+ -> Login using ost 
+ -> Enter the required field 
+ -> Update Delivery Details | 
+    Change/Update Delivery | 
+    Estimated Tank: (Ask the customer or check the SAP 
+ -> Submit 
+ -> Copy RITM 
+ -> X button 
+ -> Save 
+ -> SAP 
+ -> Hamburger Icon 
+ -> Create Customer 
+ -> Credit check / Auto Pay 
+ -> Click the "Auto pay" button 
+ -> run Echoh -> To get the Credit Card(Tokenized) and ask the customer for the required fields 
+ -> Save 
+ -> click OK 
+ -> SAP 
+ -> Refresh 
+ -> CRM
+ 
+ -> Summary 
+ -> Flags 
+ -> paste the RITM 
+ -> Notes & Activities 
+ -> Delivery method change and autopay enrollment 
+ -> Add To Queue 
+ -> Business Services 
+ -> Save & Close
 
 ** To check if the customer is Autopay = SAP -> Invoices -> Payment
 
 ==============================================
-
 Start:
 *Issue: WLC to FCT
 *Case: Ship To
@@ -635,7 +709,31 @@ Start:
 *Add To Queue: Business Services
 *Process:
 WLC to FCT
-Ship To -> "+" -> Create New Case -> Summary -> Case Type: Delivery | Sub-Type: Delivery Method Change | Called in By: Vivian | Desc: called in to change the method change. -> Save -> Application -> Business Services -> New Existing -> Login using ost -> enter the required field -> Sold To: | Update Deliver Details | Change/Update | change to FCT | Estimated Tank %(Confirm this to the customer) -> Submit -> Copy the RITM -> SAP -> click "Refresh" -> CRM -> Summary -> Flags -> paste the RITM -> Notes & Activities -> Add To Queue -> Business Services -> Save & Close
+Ship To 
+-> "+" 
+-> Create New Case 
+-> Summary 
+-> Case Type: Delivery | Sub-Type: Delivery Method Change | Called in By: Vivian | Desc: called in to change the method change. 
+-> Save 
+-> Application 
+-> Business Services 
+-> New Existing 
+-> Login using ost 
+-> enter the required field 
+-> Sold To: | Update Deliver Details | Change/Update | change to FCT | Estimated Tank %(Confirm this to the customer) 
+-> Submit 
+-> Copy the RITM 
+-> SAP 
+-> click "Refresh" 
+-> CRM
+ 
+-> Summary 
+-> Flags 
+-> paste the RITM 
+-> Notes & Activities 
+-> Add To Queue 
+-> Business Services 
+-> Save & Close
 
 ==============================================
 
@@ -798,8 +896,34 @@ Ship To -> "+" -> Create New Case -> Summary -> Case Type: Delivery | Sub-Type: 
 *Case: Sold To
 *iframes: http://upfprdw1000.amerigas.com/gm/folder-1.11.37743?mode=EU&originalContext=1.11.45023
 *Process:
-
-Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc:cx would like to dispute the full amount -> Application -> SAP -> Invoice tile -> "invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" dispute Case -> Reason: *SD-Cylinder/ Tank Rent - Reversal |  -> "Credit Memo Amt is for FI only" | click "Request Approval" Button -> Create Rent-CR. Memo Request | Order Reason: Eqpt Rent | All Items -> select the Item and click the "Item Condition" icon at the lower left |if No "ZFER" click "Insert Row" button | click the "double-box" icon -> ZFER | Amount column enter the charge amount -> Click Save -> Bottom page, copy the Credit Memo Request# -> Go back to the "Dispute Management" View -> CRM -> S
+Sold To 
+-> Create a case 
+-> Summary 
+-> Case Details 
+-> Summary 
+-> Case Type: Billing/AR, 
+   Sub-Type: Incorrect Bill, 
+   Called in by: , 
+   Desc:cx would like to dispute the full amount 
+-> Application 
+-> SAP 
+-> Invoice tile 
+-> "invoice" tab 
+-> put a check mark on the invoice#  
+-> drop-down: Dispute 
+-> click the Invoice# 
+-> "Create" dispute Case 
+-> Reason: *SD-Cylinder/ Tank Rent - Reversal |  
+-> "Credit Memo Amt is for FI only" | 
+-> click "Request Approval" Button 
+-> Create Rent-CR. Memo Request | 
+   Order Reason: Eqpt Rent | All Items 
+-> select the Item and click the "Item Condition" icon at the lower left |if No "ZFER" click "Insert Row" button | click the "double-box" icon -> ZFER | Amount column enter the charge amount 
+-> Click Save 
+-> Bottom page, copy the Credit Memo Request# 
+-> Go back to the "Dispute Management" View 
+-> CRM 
+-> S
 
 *Img-dir: main/dispute_tank_rent_full
 *Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image033.png,image037.png,image041.png,image047.png,image049.png,image053.png,image057.png,image061.png,image063.png,image065.png,image067.png,image071.png,image075.png,image079.png,image083.png,image087.png,image091.png,image095.png,image099.png,image103.png,image107.png,image111.png,image115.png,image121.png,image125.png,image129.png,image133.png,image137.png,image141.png,image145.png,image149.png,image153.png,image157.png,image161.png,image165.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png,image197.png
@@ -812,10 +936,30 @@ Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Bil
 *iframes:http://upfprdw1000.amerigas.com/gm/folder-1.11.44333?mode=EU&originalContext=1.11.45023
 *Process:
 
-
-Sold To -> Create a case -> Summary -> Case Details -> Summary -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc:cx would like to dispute the partial amount of tank rent-> Application -> SAP -> Invoice tile -> "invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" dispute Case -> Reason: *SD-Cylinder/ Tank Rent -Amount Dispute - Bill |  -> 
-
-click "Request Approval" Button -> Create Rent-CR. Memo Request | Order Reason: Eqpt Rent | All Items -> select the Item and click the "Item Condition or Coin" icon at the lower left |if No "ZFER" click "Insert Row" button | click the "double-box" icon -> ZFER | Amount column enter the PARTIAL amount (partial amount) -> Click Save -> Bottom page, copy the Credit Memo Request# -> Billing / AR -> Fees & Rent info -> Fees or Rent in Question | click the Incorrect Bill Request -> Billing doc Type | Dispute Reason:SD - Cylinder(512) | Credit Amount: 25.00 
+Sold To -> Create a case 
+-> Summary 
+-> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc:cx would like to dispute the partial amount of tank rent
+-> Application 
+-> SAP 
+-> Invoice tile 
+-> "invoice" tab 
+-> put a check mark on the invoice#  
+-> drop-down: Dispute 
+-> click the Invoice# 
+-> "Create" dispute Case 
+-> Reason: *SD-Cylinder/ Tank Rent - Amount Dispute - Bill |  
+-> click "Request Approval" Button 
+-> Create Rent-CR. Memo Request | Order Reason: Eqpt Rent | All Items 
+-> select the Item and click the "Item Condition or Coin" icon at the lower left |
+   if No "ZFER" click "Insert Row" button | 
+   click the "double-box" icon 
+-> ZFER | 
+   Amount column enter the PARTIAL amount (partial amount) 
+-> Click Save 
+-> Bottom page, copy the Credit Memo Request# 
+-> Billing / AR -> Fees & Rent info 
+-> Fees or Rent in Question | click the Incorrect Bill Request 
+-> Billing doc Type | Dispute Reason:SD - Cylinder(512) | Credit Amount: 25.00 
 
 *Img-dir: main/dispute_tank_rent_partial
 *Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image033.png,image037.png,image041.png,image047.png,image049.png,image053.png,image057.png,image061.png,image063.png,image065.png,image067.png,image071.png,image075.png,image079.png,image083.png,image087.png,image091.png,image095.png,image099.png,image103.png,image107.png,image111.png,image115.png,image117.png,image121.png,image123.png,image125.png,image129.png,image133.png,image137.png,image141.png,image145.png,image149.png,image153.png,image157.png,image161.png,image165.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png
@@ -826,7 +970,33 @@ click "Request Approval" Button -> Create Rent-CR. Memo Request | Order Reason: 
 *Issue: Tank Reset or Level tank
 *Case: Sold To
 *Process:
-Ship To -> Case Type: Service | Case Sub-type: Request Service Appt ->  Summary -> SAP -> SERVICE  tile -> CREATE SERVICE ORDER button -> Notification: LEVEL TANK | Req.Type: NESR Non Emergency Service Request | NE13 Level or Reset Tank | Job Notes: LEVEL TANK -> click  CREATE SERVICE SALES ORDER button -> SAVE button -> Copy the Notification#, Service Order# and Service Sales Order# for Docs -> SERVICE tab -> SERVICE REQUEST INFORMATION -> Is AG CX?: yes -> SSO Information -> Service Work Order Number: 4008119998 | Service Work Order Request Type: NE13 - Level OR Tank(Repair in CALL SCRIPT) | Service Work Order Status: Open -> DELIVER tab -> ORDER INFORMATION -> Sales Order Number: | Priority: Standard | Sales Order Status: Open -> Notes & Activity -> Paste the  Notification#, Service Order# and Service Sales Order# -> Add To Queue: Service -> Save & Close
+Ship To 
+-> Case Type: Service | 
+   Case Sub-type: Request Service Appt 
+->  Summary 
+-> SAP 
+-> SERVICE  tile 
+-> CREATE SERVICE ORDER button 
+-> Notification: LEVEL TANK | 
+   Req.Type: NESR Non Emergency Service Request | 
+   NE13 Level or Reset Tank | 
+   Job Notes: LEVEL TANK 
+-> click  CREATE SERVICE SALES ORDER button 
+-> SAVE button 
+-> Copy the Notification#, Service Order# and Service Sales Order# for Docs 
+-> SERVICE tab 
+-> SERVICE REQUEST INFORMATION 
+-> Is AG CX?: yes 
+-> SSO Information 
+-> Service Work Order Number: 4008119998 | Service Work Order Request Type: NE13 - Level OR Tank(Repair in CALL SCRIPT) | Service Work Order Status: Open 
+-> DELIVER tab 
+-> ORDER INFORMATION 
+-> Sales Order Number: | 
+   Priority: Standard | 
+   Sales Order Status: Open 
+-> Notes & Activity 
+-> Paste the  Notification#, Service Order# and Service Sales Order# -> Add To Queue: Service 
+-> Save & Close
 
 *Img-dir: main/tank_reset
 *Img-file :image001.png,image007.png,image011.png,image015.png,image019.png,image023.png,image027.png,image031.png,image035.png,image039.png,image041.png,image045.png,image049.png,image053.png,image057.png,image061.png,image065.png,image068.png,image072.png,image076.png,image080.png,image084.png,image088.png,image092.png,image096.png,image100.png,image104.png,image106.png,image110.png,image114.png,image116.png,image120.png,image122.png,image126.png,image130.png,image134.png,image138.png,image142.png,image146.png,image150.png,image154.png,image158.png,image162.png,image166.png
@@ -840,7 +1010,35 @@ Ship To -> Case Type: Service | Case Sub-type: Request Service Appt ->  Summary 
 Same as Dispute
 
 Process the re-bill 
-CRM -> SOLD TO | "+" -> Create a case -> Case Type: Billing A/R | Sub-case type: Incorrect bill, Called in: [customer name], Desc: cx called in to dispute the price per gallon in the customers account. $3.10 was charged of $3.20/gallon -> Save -> Application SAP -> Business Services -> Rebill Request -> Login using your os4541t73 -> Fill out the "Required" fields | Copy pasted the "SHIP TO" account# | "Region" Down-down : Price adjustment -> SAP-> Invoices -> "Invoice" tab -> Look for the invoice# | put a check mark then click the "Ref" column and get the order#(Invoice Ref#) paste to the "Order number for rebill" -> Consolidated : No -> copy paste the Invoice# -> "CONTRACT PRICE: No -> Incorrect Price Billed: 2.639 | Correct price to be charged: 2.50 -> Additional comments: ->  Submit -> copy the RITM -> Flags -> ServiceNow Ticket Number: RITM: 3424348 -> Notes and Activities -> Rebill Request | CX complains the incorrect PPG for the invoice#: . He was quoted for $2.50/gallon but was charged $2.639/gallon. RITM: 3424348 -> Add Notes -> Add To Queue -> Business Services -> Save & Close
+CRM 
+-> SOLD TO | "+" 
+-> Create a case 
+-> Case Type: Billing A/R | Sub-case type: Incorrect bill, Called in: [customer name], Desc: cx called in to dispute the price per gallon in the customers account. $3.10 was charged of $3.20/gallon 
+-> Save 
+-> Application SAP 
+-> Business Services 
+-> Rebill Request 
+-> Login using your os4541t73 
+-> Fill out the "Required" fields | Copy pasted the "SHIP TO" account# | "Region" Down-down : Price adjustment 
+-> SAP
+-> Invoices 
+-> "Invoice" tab 
+-> Look for the invoice# | put a check mark then click the "Ref" column and get the order#(Invoice Ref#) paste to the "Order number for rebill" 
+-> Consolidated : No 
+-> copy paste the Invoice# 
+-> "CONTRACT PRICE: No 
+-> Incorrect Price Billed: 2.639 | Correct price to be charged: 2.50 
+-> Additional comments: 
+->  Submit 
+-> copy the RITM 
+-> Flags 
+-> ServiceNow Ticket Number: RITM: 3424348 
+-> Notes and Activities 
+-> Rebill Request | CX complains the incorrect PPG for the invoice#: . He was quoted for $2.50/gallon but was charged $2.639/gallon. RITM: 3424348 
+-> Add Notes 
+-> Add To Queue 
+-> Business Services 
+-> Save & Close
 
 ** Check if the CX is special pricing
 
@@ -884,7 +1082,39 @@ FI Dispute = financial dispute. Resolve by creation of an FI Credit Memo without
 
 ** No no for "Fees & Rent"
 
-CRM -> Search Account -> Sold To -> "+" -> Create a case -> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc: Called in in to dispute late fee. -> Save -> Application -> SAP -> Invoices -> "Invoice" tab -> "Invoice" tab -> put a check mark on the invoice#  -> drop-down: Dispute -> click the Invoice# -> "Create" ispute Case -> Reason: late fee(502) -> paste on the title | FI-LATE FEE-Brad Teaser | Long Text: Brad called in to dispute late fee, customer mentioned that he was able to pay the amount before due date -> Save -> Yes -> "Notes" on the top right | Orig. Disp. Amt: 38.16 -> click "Edit" button on the top right -> Credit Memo Amt: 38.16 | Add additional notes if needed -> Request Approval-> copy the popup text  -> click Approved button -> copy the popup (Case: 6015757 successfully changed) | make sure the "Status" is 99 closed on the left column. -> CRM -> Billing/AR -> Incorrect Bill Request: Billing Document Type: Fee | Dispute Number: 6015757 | Dispute Reason: 502 | Credit Amount: 38.16 -> Notes & Activities: Dispute late fee | Brad called in to dispute late fee customer mentioned that he was able to pay the amount before the due date, Dispute Case ID: 601575 -> Save -> Resolve case: Account Update -> Save & Close
+CRM -> Search Account 
+-> Sold To -> "+" 
+-> Create a case 
+-> Case Type: Billing/AR, Sub-Type: Incorrect Bill, Called in by: , Desc: Called in in to dispute late fee. 
+-> Save 
+-> Application 
+-> SAP 
+-> Invoices 
+-> "Invoice" tab 
+-> "Invoice" tab 
+-> put a check mark on the invoice#  
+-> drop-down: Dispute 
+-> click the Invoice# 
+-> "Create" dispute Case 
+-> Reason: late fee(502) 
+-> paste on the title | FI-LATE FEE-Brad Teaser | Long Text: Brad called in to dispute late fee, customer mentioned that he was able to pay the amount before due date 
+-> Save 
+-> Yes 
+-> "Notes" on the top right | Orig. Disp. Amt: 38.16 
+-> click "Edit" button on the top right 
+-> Credit Memo Amt: 38.16 | Add additional notes if needed 
+-> Request Approval
+-> copy the popup text  
+-> click Approved button 
+-> copy the popup (Case: 6015757 successfully changed) | make sure the "Status" is 99 closed on the left column. 
+-> CRM 
+-> Billing/AR 
+-> Incorrect Bill Request: Billing Document Type: Fee | Dispute Number: 6015757 | Dispute Reason: 502 | Credit Amount: 38.16 
+
+-> Notes & Activities: Dispute late fee | Brad called in to dispute late fee customer mentioned that he was able to pay the amount before the due date, Dispute Case ID: 601575 
+-> Save 
+-> Resolve case: Account Update 
+-> Save & Close
 
 ====================================
 Fees & rent | Dispute fees and Rent | Dispute Fees and Rent
@@ -979,14 +1209,39 @@ Look for the "Emergency calls"
 
 Edit order
 ========================
-Search account -> magnifying glass -> Application -> SAP - Order Tiles -> click the Order# -> "Menu" button -> Sales Document -> Change -> Order text box -> Click the text -> click "check" button -> Order Quantity then enter the new quantity -> "Save" button to save
+Search account 
+-> magnifying glass 
+-> Application 
+-> SAP - Order Tiles 
+-> click the Order# 
+-> "Menu" button 
+-> Sales Document 
+-> Change 
+-> Order text box 
+-> Click the text 
+-> click "check" button 
+-> Order Quantity then enter the new quantity 
+-> "Save" button to save
 
 Add 
-OGSD TeleSales tab -> click the last row -> (Shipping Code:70029) -> Enter the Net
+OGSD TeleSales tab 
+-> click the last row 
+-> (Shipping Code:70029) 
+-> Enter the Net
 
 Cancel Orders
 ==================
-Search account -> magnifying glass -> Application -> SAP - Order Tiles -> click the Order# -> "Menu" button -> Sales Document -> Change -> "Reason for rejection" tab -> Competitor better -> Save
+Search account 
+-> magnifying glass 
+-> Application 
+-> SAP - Order Tiles 
+-> click the Order# 
+-> "Menu" button 
+-> Sales Document 
+-> Change 
+-> "Reason for rejection" tab 
+-> Competitor better 
+-> Save
 
 
 After Edit or Cancel orders
@@ -1004,7 +1259,14 @@ Billing Inquiry
 ** Account Balance Due = is the balance that you need the customer needs to payment 
 ** Open Amt: Next billing cycle
 
-Sold To -> Magnifying -> SAP -> Invoice -> Account balance due -> CRM -> Add notes -> Billing Inquiry | CX called in to check their account balance. -> Save and close
+Sold To 
+-> Magnifying 
+-> SAP 
+-> Invoice 
+-> Account balance due 
+-> CRM 
+-> Add notes 
+-> Billing Inquiry | CX called in to check their account balance. -> Save and close
 
 ==============================================
 
@@ -1026,7 +1288,32 @@ Dispute WLC Fee
 *iframes:http://upfprdw1000.amerigas.com/gm/folder-1.11.39621?mode=EU&primaryCSH=Create%2CService%2COrder
 *Process:
 
-Ship To -> Case Type: Service | Case Sub-type: Request Service Appt ->  Summary -> SAP -> SERVICE  tile -> CREATE SERVICE ORDER button -> Notification: LEVEL TANK | Req.Type: NESR Non Emergency Service Request | NE13 Level or Reset Tank | Job Notes: LEVEL TANK -> click  CREATE SERVICE SALES ORDER button -> SAVE button -> Copy the Notification#, Service Order# and Service Sales Order# for Docs -> SERVICE tab -> SERVICE REQUEST INFORMATION -> Is AG CX?: yes -> SSO Information -> Service Work Order Number: 4008119998 | Service Work Order Request Type: NE13 - Level OR Tank(Repair in CALL SCRIPT) | Service Work Order Status: Open -> DELIVER tab -> ORDER INFORMATION -> Sales Order Number: | Priority: Standard | Sales Order Status: Open -> Notes & Activity -> Paste the  Notification#, Service Order# and Service Sales Order# -> Add To Queue: Service -> Save & Close
+Ship To 
+-> Case Type: Service | Case Sub-type: Request Service Appt 
+->  Summary 
+-> SAP 
+-> SERVICE  tile 
+-> CREATE SERVICE ORDER button 
+-> Notification: LEVEL TANK | Req.Type: NESR Non Emergency Service Request | NE13 Level or Reset Tank | Job Notes: LEVEL TANK -> click  CREATE SERVICE SALES ORDER button 
+-> SAVE button 
+-> Copy the Notification#, Service Order# and Service Sales Order# for Docs 
+
+-> SERVICE tab 
+-> SERVICE REQUEST INFORMATION 
+-> Is AG CX?: yes 
+-> SSO Information 
+-> Service Work Order Number: 4008119998 | Service Work Order Request Type: NE13 - Level OR Tank(Repair in CALL SCRIPT) | Service Work Order Status: Open 
+
+-> DELIVER tab 
+-> ORDER INFORMATION 
+-> Sales Order Number: | Priority: Standard | Sales Order Status: Open 
+
+-> Notes & Activity 
+-> Paste the  Notification#, Service Order# and Service Sales Order# 
+
+-> Add To Queue: Service 
+
+-> Save & Close
 
 *Img-dir: main/service_order
 *Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image023.png,image027.png,image031.png,image035.png,image039.png,image043.png,image047.png,image051.png,image055.png
@@ -1037,7 +1324,10 @@ Ship To -> Case Type: Service | Case Sub-type: Request Service Appt ->  Summary 
 *Issue: District Service Offerings
 *Case: Availability
 *Process:
-** To check the District Service -> Summary -> District Service Offerings or AmeriGas Notes tab -> look if it's offered or available.
+** To check the District Service 
+-> Summary 
+-> District Service Offerings or AmeriGas Notes tab 
+-> look if it's offered or available.
 
 - If not (Mr. Customer upon checking here your AmeriGas doesn't offer level service on your location but the good thing is that we are working on it right now, for the meantime we advise that you and HIRE first a service with a third party company on your location. ) 
 
@@ -1049,13 +1339,28 @@ Ship To -> Case Type: Service | Case Sub-type: Request Service Appt ->  Summary 
 
 ** To cancel Service Order -> click the "Ellipses" -> click "" button then follow the on screen instructions.
 
+=====================================================
 *Start:
 *Issue: Add new Ship To account
 *Case: Sold To
 *Process:
+
 Create Additional Ship-to on an Existing Account
-===================================================
-Sold To -> "Customer Account Diagram" icon -> "+" Ship-To -> Fill in all the required fields and Validate Address -> Click the "Validate Address" button -> click the "Create Ship-To" button. -> CRM -> create a case for ship-to | Case Type: Service | Sub-type: Request Service | Called in By: | Desc: -> Notes & Activities -> Add to Queue: Service -> Save & Close.
+
+Sold To 
+-> "Customer Account Diagram" icon 
+-> "+" Ship-To 
+-> Fill in all the required fields and Validate Address 
+-> Click the "Validate Address" button 
+-> click the "Create Ship-To" button. 
+-> CRM 
+-> create a case for ship-to | Case Type: Service | Sub-type: Request Service | Called in By: | Desc: 
+
+-> Notes & Activities 
+
+-> Add to Queue: Service 
+
+-> Save & Close.
 
 ==============================================
 
@@ -1088,7 +1393,19 @@ iframes:http://upfprdw1000.amerigas.com/gm/folder-1.11.44076?mode=EU&primaryCSH=
     * Not final billed or loss coded
     * Company owned tank
 
+6. LIHEAP ** but double check this first
 ==============================================
+
+*Start:
+*Issue:LIHEAP
+*Case: 
+*Process:
+If not in the system yet ask the customer to follow on their LIHEAP agency.
+
+If in the system, customer may place and order.
+
+==============================================
+
 
 *Start:
 *Issue: No Case Needed
@@ -1098,12 +1415,71 @@ Making a Payment and Billing Inquiry
     - Payment
     - Down Payment
     - How much is Due Amount
-    
+
+==============================================
+
+
+
+
+*Start:
+*Issue: Final Bill
+*Case: 
+*Process:
+http://upfprdw1000.amerigas.com/gm/folder-1.11.44206?mode=EU&originalContext=1.11.45042
+
+http://upfprdw1000.amerigas.com/gm/folder-1.11.44203?mode=EU&originalContext=1.11.45042
+
+http://upfprdw1000.amerigas.com/gm/folder-1.11.37475?mode=EU&originalContext=1.11.45042
+http://upfprdw1000.amerigas.com/gm/folder-1.11.38865?mode=EU&originalContext=1.11.45042
+http://upfprdw1000.amerigas.com/gm/folder-1.11.44209?mode=EU&originalContext=1.11.45042
+http://upfprdw1000.amerigas.com/gm/folder-1.11.44209?mode=EU&originalContext=1.11.45042
+http://upfprdw1000.amerigas.com/gm/folder-1.11.44209?mode=EU&originalContext=1.11.45042
+http://upfprdw1000.amerigas.com/gm/folder-1.11.38758?mode=EU&originalContext=1.11.45042
+http://upfprdw1000.amerigas.com/gm/folder-1.11.37483?mode=EU&originalContext=1.11.45042
+
+*Img-dir: main/final_bill
+*Img-file:image01.png,image02.png,image03.png,image04.png,image05.png,image06.png,image07.png,image08.png,image09.png,image10.png,image11.png,image12.png,image13.png,image14.png,image15.png,image16.png,image17.png,image18.png,image19.png,image20.png,image21.png,image22.png,image23.png,image24.png,image25.png,image26.png,image27.png,image28.png,image29.png,image30.png,image31.png,image32.png,image33.png,image34.png,image35.png,image36.png,image37.png,image38.png,image39.png,image40.png
+
 ==============================================
 
 *Start:
+*Issue: Delivery Request or Order Delivery
+*Case: 
+*Process:
+
+*Img-dir: main/delivery_request
+*Img-file:image01.png,image02.png,image03.png,image04.png,image05.png,image06.png,image07.png,image08.png,image09.png,image10.png,image11.png,image12.png,image13.png,image14.png,image15.png,image16.png,image17.png,image18.png,image19.png,image20.png,image21.png,image22.png,image23.png,image24.png,image25.png,image26.png,image27.png,image28.png,image29.png,image30.png,image31.png,image32.png,image33.png,image34.png,image35.png,image36.png,image37.png,image38.png,image39.png,image40.png
+
+
+==============================================
+
+*Start:
+*Issue: Proof of Delivery
+*Case: 
+*Process:
+
+*Img-dir: main/delivery_proof
+*Img-file:image01.png,image02.png,image03.png,image04.png,image05.png,image06.png,image07.png,image08.png,image09.png,image10.png,image11.png,image12.png,image13.png,image14.png,image15.png,image16.png,image17.png,image18.png,image19.png,image20.png,image21.png,image22.png,image23.png,image24.png,image25.png,image26.png,image27.png,image28.png,image29.png
+
+==============================================
+
+*Start:
+*Issue: Meters
+*Case Type: Billing A-R
+*Case Sub-Type: Meter
+
+*Process:
+Making a Payment and Billing Inquiry
+    - Payment
+    - Down Payment
+    - How much is Due Amount
+        
+==============================================
+*Start:
 *Issue: Add Authorize User
 *Case: Sold To
+*Case Type: Administration
+*Case Sub-Type: 
 *Process:
 - No case needed
 - RELATED CONTACTS
@@ -1147,8 +1523,6 @@ CUSTOMER CARE: 800-427-4968
 Service: 70015
 ACE Commercial: 888-428-9779
 Orchard Commercial: 208-186-1020
-
-
 
 IT as per work force 8777671611 
 
@@ -1265,9 +1639,68 @@ CUSTOMER CALL
         - Anything else that I can help you with?
         - (CALLER'S NAME) Thank you for being a VALUED Amerigas customer"
 
+=================================================
+*Start:
+*Issue: Dispute Fees and Rent
+*Case: Sold To
+*Case Type: Billing AR 
+*Case Sub-Type: Fees & Rent
+*Process:
+
+*Img-dir: am/dispute_FeeAndRent
+*Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image035.png,image039.png,image043.png,image047.png,image051.png,image055.png,image057.png,image061.png,image065.png,image067.png,image071.png,image073.png,image075.png,image077.png,image081.png,image085.png,image089.png,image093.png,image097.png,image101.png,image105.png,image109.png,image113.png,image115.png,image117.png,image119.png,image121.png,image125.png,image129.png,image133.png,image137.png,image141.png,image145.png,image147.png,image149.png,image153.png,image157.png,image161.png,image165.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png,image197.png,image201.png,image205.png,image209.png,image213.png,image217.png,image221.png
+
+=================================================
+*Start:
+*Issue: Dispute GPP enrollment fee
+*Case: Sold To
+*Case Type: Billing AR 
+*Case Sub-Type: Fees & Rent
+*Process:
+
+*Img-dir: am/dispute_GPP_Enroll_fee
+*Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image031.png,image035.png,image039.png,image043.png,image047.png,image051.png,image055.png,image059.png,image063.png,image065.png,image069.png,image071.png,image075.png,image077.png,image081.png,image085.png,image089.png,image093.png,image097.png,image101.png,image105.png,image109.png,image113.png,image117.png,image121.png,image125.png,image129.png,image133.png,image137.png,image141.png,image145.png,image149.png,image153.png,image157.png,image161.png,image165.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png,image197.png,image201.png,image205.png,image209.png,image213.png,image217.png,image221.png,image225.png,image229.png,image233.png
+
+=================================================
+*Start:
+*Issue: Dispute Hazard Material and Fuel fee
+*Case: Sold To
+*Case Type: Billing AR 
+*Case Sub-Type: Fees & Rent
+*Process:
+
+*Img-dir: am/dispute_HazMat_fuel
+*Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image035.png,image039.png,image043.png,image045.png,image049.png,image053.png,image057.png,image059.png,image061.png,image063.png,image067.png,image071.png,image075.png,image079.png,image083.png,image087.png,image091.png,image095.png,image099.png,image103.png,image107.png,image109.png,image111.png,image113.png,image115.png,image119.png,image123.png,image127.png,image131.png,image135.png,image139.png,image141.png,image143.png,image147.png,image151.png,image155.png,image159.png,image163.png,image167.png,image171.png,image175.png,image179.png,image183.png,image187.png,image191.png,image195.png,image199.png,image203.png,image207.png,image211.png,image215.png
+
+=================================================
+*Start:
+*Issue: Dispute Labor Charge
+*Case: Sold To
+*Case Type: Billing AR 
+*Case Sub-Type: Fees & Rent
+*Process:
+
+*Img-dir: am/dispute_HazMat_fuel
+*Img-file :image001.png,image005.png,image009.png,image013.png,image017.png,image021.png,image025.png,image029.png,image035.png,image039.png,image043.png,image047.png,image049.png,image053.png,image057.png,image061.png,image063.png,image065.png,image069.png,image073.png,image077.png,image081.png,image085.png,image089.png,image093.png,image097.png,image101.png,image105.png,image109.png,image111.png,image115.png,image119.png,image121.png,image125.png,image129.png,image133.png,image137.png,image141.png,image145.png,image149.png,image153.png,image157.png,image161.png,image165.png,image169.png,image173.png,image177.png,image181.png,image185.png,image189.png,image193.png,image197.png,image201.png,image205.png,
+
+
+=================================================
+*Start:
+*Issue: Gen
+*Case: Sold To
+*Case Type: Billing AR 
+*Case Sub-Type: Incorrect Bill
+*Process:
+
+*Img-dir: am/dispute_FeeAndRent
+*Img-file :
 
 *Start:
 *Issue: 
 *Case: 
 *Process:
+delivey_proof -> image29
+delivery_reques -> image13
+final_bill -> images40
+
 
