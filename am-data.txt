@@ -701,7 +701,7 @@ copy the RITM -> Flags -> ServiceNow Ticket Number: RITM324253 -> Delivery tab -
 ** To check if the customer is Autopay = SAP -> Invoices -> Payment
 
 ==============================================
-Start:
+*Start:
 *Issue: WLC to FCT
 *Case: Ship To
 *Case Type: Delivery
