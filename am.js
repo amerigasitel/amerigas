@@ -69,10 +69,10 @@ function $(selector){
 	return self;
 }
 var imgVisible = 0;
-const fileUrl = 'am-data.txt' // provide file location
+const fileUrl = 'am-datab.txt' // provide file location
 fetch(fileUrl)
    .then( r => r.text() )
-   .then( t => $('.kb-datab').html(t) )
+   .then( t => $('.kb-data').html(t) )
 
 $('.btns').each(function(e){
 	//alert(e.getAttribute('class'));
