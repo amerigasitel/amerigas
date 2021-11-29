@@ -74,6 +74,11 @@ fetch(fileUrl)
    .then( r => r.text() )
    .then( t => $('.kb-data').html(t) )
 
+const fileCss = 'am.css' // provide file location
+fetch(fileCss)
+   .then( r => r.text() )
+   .then( t => $('.kb-css').html(t) )
+
 $('.btns').each(function(e){
 	//alert(e.getAttribute('class'));
 	$(e).on('click', function(){
@@ -119,9 +124,15 @@ $('.btns').each(function(e){
 				$("#img-"+cf).show();
 			}
 		} else if(isClass(e, 'btn-wrap')){
-			var mCDid = spaceToDash('Wrap Up Call');
-			$('.awrap').toggle();
-			$('.awrap').val($('#' + mCDid).val().replace('*Issue: Wrap Up Call',''));
+			//var mCDid = spaceToDash('Wrap Up Call');
+			$('.awraps').toggle();
+			//$('.awrap').val($('#' + mCDid).val().replace('*Issue: Wrap Up Call',''));
+		} else if(isClass(e, 'btn-css')){
+			$('.kb-css-div').toggle();
+		} else if(isClass(e, 'btn-css-apply')){
+			var css = $('.kb-css').val();
+			$('.style-css').html("<style>" +css+ "<style>");
+			$('.kb-css-div').toggle();
 		} else if(isClass(e, 'btn-aht')){
 				var ahtAll = $('.case-notes').val();
 				var iText = $('.case-notes').val().split(' ');

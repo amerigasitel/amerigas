@@ -265,7 +265,9 @@
 .kb-right{
 	float:left;
 	width:69%;
+	resize:horizontal;
 }
+.kb-css,
 .kb-tab,
 .kb-images{
 	float:left;
@@ -290,7 +292,7 @@
 .ahts{
 	font-size:0.7rem;
 }
-.awrap{display:none;width:98%;height:400px;}
+.awraps{display:none;width:98%;font-size:0.7rem;padding-left:1%;}
 .call-flow{
 	display:none;
 	font-size:0.7rem;
