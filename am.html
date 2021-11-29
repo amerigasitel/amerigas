@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AmeriGas 9002|5738</title>
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="am.css">
+</head>
+<body>
+	<div class="sidebar close">
+		<div class="logo-details">
+			<i class='bx bxl-c-plus-plus bx-menu'></i>
+			<span class="logo_name">JAP</span>
+		</div>
+		
+		<ul class="nav-links">
+			<li>
+				<div class="iocn-link">
+					<a href="#">
+					<i class='bx bx-grid-alt' ></i>
+					<span class="link_name">Menu</span>
+					</a>
+					<i class='bx bxs-chevron-down arrow' ></i>
+				</div>
+				<ul class="sub-menu">
+					<li><a class="link_name load-data btns" href="#">Load Data</a></li>
+					<li><a href="#" class="show-images">KB Images</a></li>
+					<li><a href="#" class="btns">PHP & MySQL</a></li>
+				</ul>
+			</li>
+		
+		</ul>
+	</div>
+	
+	<section class="home-section">
+		<div class="kb-main">
+			<div class="kb-left">
+				<div class="call-flow cf-1 cf-opening">
+					<span class="header">Opening:</span>
+					<span class="spiel">Thank you for calling AmeriGas, my name is "Jeremias".</span>
+					<span class="spiel">How may I help you, today?</span>
+					<span class="spiel"><b>Paraphrase: ......</b></span>
+				</div>
+				<div class="call-flow cf-2 cf-pulling">
+					<span class="header">Account Pull-up:</span>
+					<span class="spiel">May I have your <b>Account#</b> OR <b>Phone#</b>, please?</span>
+				</div>
+				<div class="call-flow cf-3 cf-verify">
+					<span class="header">Account Verify:</span>
+					<span class="spiel">Would you please VERIFY your <b>First and Lastname</b> AND the<b>Delivery Address</b> on the account, please?</span>
+				</div>
+				<div class="call-flow cf-4 cf-confirm">
+					<span class="header">Account Confirmation:</span>
+					<span class="spiel">Please CONFIRM your <b>Mobile #</b> AND your <b>Email Address</b>, please?</span>
+				</div>
+				<p class="power-words">Power: Pefect! | Wonderful! | Great! | Awesome! </p>
+				<div class="kb-notes">
+					<textarea name="cf-accphone" class="case-notes" data-name="account"></textarea>
+					<div class="kb-data-div hide-me">
+					<textarea name="cf-data" class="kb-data" data-name="kb-data"></textarea>
+					<p><a href="#" class="btns btn-load-data btn">Load Data</a>&nbsp;&nbsp;<a href="#" class="btns kb-data-hide btn">Hide</a></p>
+					</div>
+					<textarea class="kb-info"></textarea>
+				</div>
+				<div class="ahts">
+					<span class="aht"></span><br />
+					<span class="aht-sec"></span><br />
+					<span class="aht-mins"></span>
+					<span class="aht-all"></span><br />
+					<span class="aht-alls"></span>
+				</div>
+				
+			</div>
+			
+			<div class="kb-right">
+				<button class="btns btn-back" title="Previous Call Script"><b>&lt;&lt;</b></button>
+				<input type="text" name="cfno" class="cfno" value="1" />
+				<button class="btns btn-next" title="Next Call Script"><b>&gt;&gt;</b></button>
+				<button class="btns btn-wrap"><b>Wrap-Up</b></button>
+				<input type="text" id="kbCase" onkeyup="caseSearch()" placeholder="Search for case type.." title="Type in a case type">
+				<button class="btns bi-back" id="bi-back" title="Previous Image"><b>&lt;&lt;</b></button>
+				<input type="text" name="cfno-img" class="cfno-img" value="1" />
+				<button class="btns bi-next" title="Next Image"><b>&gt;&gt;</b></button>
+				<button class="btns btn-aht"><b>AHT</b></button>
+				<ul id="caseList"></ul>
+				<textarea  class="awrap"></textarea>
+				<div class="kb-tab"></div>
+				<div class="kb-images"></div>
+			</div>
+		</div>
+		
+		<div class="kb-tmp hide-me">
+			
+			<div class="kb-desc"></div>
+			<div class="cf-images"></div>
+		</div>
+	</section>
+
+  <script src="am.js" charset="utf-8"></script>
+  <script>
+	let arrow = document.querySelectorAll(".arrow");
+	for (var i = 0; i < arrow.length; i++) {
+			arrow[i].addEventListener("click", (e)=>{
+			let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+			arrowParent.classList.toggle("showMenu");
+		});
+	}
+	let sidebar = document.querySelector(".sidebar");
+	let sidebarBtn = document.querySelector(".bx-menu");
+	console.log(sidebarBtn);
+	sidebarBtn.addEventListener("click", ()=>{
+		sidebar.classList.toggle("close");
+	});
+    let hr = min = sec = ms = "0" + 0,
+    startTimer;
+  </script>
+</body>
+</html>
